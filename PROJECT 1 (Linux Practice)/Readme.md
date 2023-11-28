@@ -21,12 +21,16 @@ cd command in linux known as the change directory command, is used to move from 
 
 - *cd BreakFast* :I used this to the move into the *BreakFast* directory 
    - *cd OgiMoiMoi* : Then i used this to move into the *OgiMoiMoi* which a subdirectory in the BreakFast directory
-   - *cd MoiMoiRecipe* : I used this to move into the *MoiMoiRecipe* which is a subdirectory in the OgiMoiMoi subdirectory
+   - ***cd MoiMoiRecipe*** : I used this to move into the *MoiMoiRecipe* which is a subdirectory in the OgiMoiMoi subdirectory
 - *cd ..* :I used this to move up to the *OgiMoiMoi* subdirectory.
 - *cd -* :I used this to move to the previous directory.
 - *cd ~* :I used to move back to the home directory
 - *cd /home/olalonpei/Lunch* :I used this to move to the Lunch directory
 
 ![cd](<Images/3. cd command.PNG>)
+
+
+## `ls` command
+ls a linux command that lists directory contents of files and directories. it provided valuable information about files, directories, and their atrributes. ls command also lists files and directories in alphabetical order.
 
 
