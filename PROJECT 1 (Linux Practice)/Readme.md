@@ -24,7 +24,7 @@ cd command in linux known as the change directory command, is used to move from 
    - ***cd MoiMoiRecipe*** : I used this to move into the *MoiMoiRecipe* which is a subdirectory in the OgiMoiMoi subdirectory
 - ***cd ..*** :I used this to move up to the *OgiMoiMoi* subdirectory.
 - ***cd -*** :I used this to move to the previous directory.
-- ***cd ~*** :I used to move back to the home directory
+- ***cd~*** :I used to move back to the home directory
 - ***cd /home/olalonpei/Lunch*** :I used this to move to the Lunch directory
 
 ![cd](<Images/3. cd command.PNG>)
