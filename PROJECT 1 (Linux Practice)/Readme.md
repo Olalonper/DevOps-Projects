@@ -52,10 +52,19 @@ concatenated command in linux reads data from the file and gives its content as 
 - ***cat sauce1.txt sauce2.txt > sauce3.txt*** :This command was used to merge the content of sauce1.txt and sauce2.txt into sauce3.txt.
 - ***tac sauce.txt*** :This command was used to display sauce.txt content in reversed order.
 
-
 ![`cat`](<Images/5. cat command.PNG>)
 ![`cd`](<Images/5. cat merge command.PNG>)
 ![`cd`](<Images/5. tac cat command.PNG>)
 
 
+## `cp` command
+its stands for copy. This command is used to copyy files or group files or directories. it creates an exact image of a file on a disk with a different file name. cp command requires at least two filename in its arguments. The following command was used:
+
+- ***cp-R*** :This was used to copy Documents into Documents_backup directory.  
+
+- ***cp sauce1.txt sauce4.txt*** :This was used to copy contents of sauce1.txt into sauce4.txt.
+
+- ***cp sauce1.txt sauce2.txt sauce3.txt /home/olalonpei/username*** :This was used to copy the 3 .txt files into username directory. 
+
+- ***cp sauce.txt /home/olalonpei/BreakFast*** :This was used to copy the .txt into  the BreakFast directory. 
 
