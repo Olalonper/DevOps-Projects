@@ -58,7 +58,7 @@ concatenated command in linux reads data from the file and gives its content as 
 
 
 ## `cp` command
-its stands for copy. This command is used to copyy files or group files or directories. it creates an exact image of a file on a disk with a different file name. cp command requires at least two filename in its arguments. The following command was used:
+it stands for copy. This command is used to copyy files or group files or directories. it creates an exact image of a file on a disk with a different file name. cp command requires at least two filename in its arguments. The following command was used:
 
 - ***cp-R*** :This was used to copy Documents into Documents_backup directory.  
 
@@ -68,3 +68,7 @@ its stands for copy. This command is used to copyy files or group files or direc
 
 - ***cp sauce.txt /home/olalonpei/BreakFast*** :This was used to copy the .txt into  the BreakFast directory. 
 
+![`cp`](<6. cp -r command.PNG>)
+![`cp`](<6. cp command to copy contents to a file into another file.PNG>)
+![`cp`](<6. cp command to files into a directory.PNG>)
+![`cp`](<6. cp command.PNG>)
