@@ -45,4 +45,17 @@ ls a linux command that lists directory contents of files and directories. it pr
 ![`ls`](<Images/4. ls command.PNG>)
 
 
+## `cat` command
+concatenated command in linux reads data from the file and gives its content as output. it helps us to create, view and conatenate. The following command was used;
+
+***cat mealname.txt*** :This command was used to read the content of ***mealname.txt***
+***cat sauce1.txt sauce2.txt > sauce3.txt*** :This command was used to merge the content of sauce1.txt and sauce2.txt into sauce3.txt.
+***tac sauce.txt*** :This command was used to display sauce.txt content in reversed order.
+
+
+![`cat`](<Images/5. cat command.PNG>)
+![`cd`](<Images/5. cat merge command.PNG>)
+![`cd`](<Images/5. tac cat command.PNG>)
+
+
 
