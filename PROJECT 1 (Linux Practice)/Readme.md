@@ -76,9 +76,9 @@ it stands for copy. This command is used to copyy files or group files or direct
 ## `mv` command
 stands for move. This command is used to rename file directories and move files from one location to another within a file system. two distinct funtions of mv command is renaming a file or directory and moving a file or driectory to another location. The following command was used;
 
-***mv mealprep1.txt /home/olalonpei/BreakFast*** :This was used to move the .txt file into the BreakFast directory
+- ***mv mealprep1.txt /home/olalonpei/BreakFast*** :This was used to move the .txt file into the BreakFast directory
 
-***mv mealprep.txt prepmeal.txt*** :This was used to rename mealprep.txt to prepmeal.txt.
+- ***mv mealprep.txt prepmeal.txt*** :This was used to rename mealprep.txt to prepmeal.txt.
 ![`mv`](<7. mv command to rename.PNG>)
 ![`mv`](<7. mv command.PNG>)
 
@@ -86,7 +86,7 @@ stands for move. This command is used to rename file directories and move files 
 ## `mkdir` command
 This allows the user to create directories or folders. this command can create multiple directories at once as well as set the permission to create a directory in the parent directory. The following command was used;
 
-***mkdir FoodBlogging*** :I used this to create the ***FoodBlogging*** directory.
+- ***mkdir FoodBlogging*** :I used this to create the ***FoodBlogging*** directory.
 
-***mkdir FoodBlogging/StreetFood*** :I used this to create a folder inside the ***FoodBlogging*** directory.
+- ***mkdir FoodBlogging/StreetFood*** :I used this to create a folder inside the ***FoodBlogging*** directory.
 ![`mkdir`](<8. mkdir command.PNG>)
