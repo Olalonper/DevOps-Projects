@@ -90,3 +90,9 @@ This allows the user to create directories or folders. this command can create m
 
 - ***mkdir FoodBlogging/StreetFood*** :I used this to create a folder inside the ***FoodBlogging*** directory.
 ![`mkdir`](<8. mkdir command.PNG>)
+
+
+## rmdir command
+This is used to remove the empty directories from the filesystem in linux. I used the following command;
+- ***rmdir -p FoodBlogging/StreetFood*** :I used this remove ***FoodBlogging*** directory, including all its ancestors.
+![`rmdir`](<9. rmdir command.PNG>)
