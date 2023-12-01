@@ -102,6 +102,7 @@ This is used to remove the empty directories from the filesystem in linux. The f
 ![`rmdir`](<9. rmdir command.PNG>)
 
 
+
 ## 10. `rm` command
 Is used to remove objects such as files, directories, symbolic links and so on from the file system. rm rmoves references to objects from the filesystem, where those objects might have had multiple references. By default, it does not remove directories. The following command was used;
 - ***rm remove*** :This was used to delete the remove folder.
@@ -113,12 +114,17 @@ Is used to remove objects such as files, directories, symbolic links and so on f
 
 ## 11. `touch` command
 Is used to create a file without any content. the file created using the touch command is empty. This command can be used when the user doesn't have data to store at the time of file creation. The command used are; 
-- ***touch teletubies*** :This was used  to create a file.
-- ***touch tiwinkie dipsy lala po*** :This was used to create multiple files.
+- ***touch teletubies***  :This was used  to create a file.
+- ***touch tiwinkie dipsy lala po***  :This was used to create multiple files.
 
 ![`touch`](<11. touch command.PNG>)
 
 
 
+## 12. `locate` command
+Is used to find files by name.
 
+- ***locate -i lunch*** :This was used to locate lunch
+
+![`locate`](<12. locate command.PNG>)
 
