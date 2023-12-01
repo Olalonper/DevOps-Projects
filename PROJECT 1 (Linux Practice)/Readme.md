@@ -195,7 +195,7 @@ This command is used to display thy discrepancies in the files by comparing the 
 
 
 
-## 19. `tar` command
+## 20. `tar` command
 This command used to create archive and extract the archive files. tar command provides archiving functionality in linux. we can also use the linux tar command to create compressed or uncompressed archive file and also maintain and modify them. The following command was used;
 - ***tar -cf archive.tar teletubies dipsy lala po*** :This command was used to archive the files
 - ***tar -tf archive.tar*** :This command was used to diplay the files i archived
