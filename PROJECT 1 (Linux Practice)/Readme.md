@@ -136,7 +136,7 @@ This command was used to find files and directories. It supports searching by fi
 This command is used to filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern. The following command was used;
 - ***grep -i dodo sauce3.txt***  :This command used to search for word ***dodo*** regardless of the case sensitivity.
 - ***grep -c dodo sauce3.txt***  :This was used to search for the count of number of matches.
-- ***grep -l dod0 sauce3.txt sauce4.txt sauce.txt***  :This was used to search for the whole word in a .txt file.
+- ***grep -l dodo sauce3.txt sauce4.txt sauce.txt***  :This was used to search for the whole word in a .txt file.
 
 ![`grep`](<14. grep command -i -c -l.PNG>)
 
@@ -145,7 +145,60 @@ This command is used to filter searches a file for a particular pattern of chara
 ## 15. `df` command
 This command displays information about file system disk space usage on the mounted file system. The following command was used;
 - ***df***  :This command used to display infromation about all the mounted file systems which.
-***df sauce3.txt*** :This command was used to display the mount information for the sauce3.txt file.
-***df -h sauce3.txt***  :This command was used to display size in power of 1024. 
+- ***df sauce3.txt*** :This command was used to display the mount information for the sauce3.txt file.
+- ***df -h sauce3.txt***  :This command was used to display size in power of 1024. 
+- ***df -h***  :This command was used to display size in power of 1024.
 
-***df -h***  :This command was used to display size in power of 1024.
+![`df`](<15. df -a command.PNG>)
+
+
+
+## 16. `du` command
+This command is used for estimating file and directory sapce usage. This following command was used;
+- ***du /home/olalonpei/Lunch***  :This command was used to show information about the storage consumption of the ***Lunch*** directory.
+
+![`16`](<16. du command.PNG>)
+
+
+
+## 17. `head` command
+This command prints the top N number of data of given input. By default, it prints 10 lines of the specified files. The following command was used;
+- ***head sauce3.txt***  :This command was used to print the default first 10 lines of the .txt file.
+- ***head -n 5 sauce3.txt*** :This command was used to print the first 5 lines.
+- ***head -c 3 sauce3.txt*** :This command was used to print the first 3 bytes from the .txt file.
+- ***head -q sauce3.txt sauce4.txt*** :This command was used to print top lines from two .txt file.
+
+![`head`](<17. head command -q -n -c.PNG>)
+
+
+
+## 18. `tail` command 
+It prints the last N number of data of given input. By default, it prints 10 lines of the specified files. The following command was used;
+- ***tail sauce3.txt***  :This command was used to print the default last 10 lines of the .txt file.
+- ***tail -n 5 sauce3.txt***  :This command was used to print the last 5 lines.
+- ***tail -c 13 sauce3.txt***  :This command was used to print the last 3 bytes from the .txt file.
+- ***tail -q sauce3.txt sauce4.txt***  :This command was used to print last set of lines from two .txt file.
+
+![`tail`](<18. tail command -n -q -c.PNG>)
+
+
+
+## 19. `diff` command
+This command is used to display thy discrepancies in the files by comparing the files line by line. The following command was used;
+- ***diff sauce3.txt sauce4.txt***  :This command was used to check if there were any discrepancies between both .txt file.
+- ***diff -c sauce3.txt sauce4.txt***  :This command was used to check if there were any discrepancies between both .txt file.
+- ***diff -u sauce3.txt sauce4.txt***  :This command was used to check if there were any discrepancies between both .txt file.
+- ***diff -i sauce3.txt sauce4.txt***  :This command was used to check if there were any discrepancies between both .txt file.
+
+![`diff`](<19. diff -c -u -i command.PNG>)
+
+
+
+
+## 19. `tar` command
+This command used to create archive and extract the archive files. tar command provides archiving functionality in linux. we can also use the linux tar command to create compressed or uncompressed archive file and also maintain and modify them. The following command was used;
+- ***tar -cf archive.tar teletubies dipsy lala po*** :This command was used to archive the files
+- ***tar -tf archive.tar*** :This command was used to diplay the files i archived
+- ***tar -xf archive.tar*** :This command was used to extract the file i archived.
+
+![`tar`](<20. tar -cf -tf -xf command.PNG>)
