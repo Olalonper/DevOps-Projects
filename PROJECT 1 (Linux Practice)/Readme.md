@@ -1,7 +1,9 @@
 # FILE MANIPULATION
 
 ## 1. `sudo` Command
-This command is used to update the package lists for available software packages from the configured repositories. I used ***sudo apt upgrade***.
+This command is used to update the package lists for available software packages from the configured repositories. The following command was used 
+
+- ***sudo apt upgrade*** :
 
 ![`sudo`](<Images/1. sudo command.PNG>)
 
@@ -64,10 +66,10 @@ concatenated command in linux reads data from the file and gives its content as 
 ## 6. `cp` command
 it stands for copy. This command is used to copyy files or group files or directories. it creates an exact image of a file on a disk with a different file name. cp command requires at least two filename in its arguments. The following command was used:
 
-- ***cp-R*** :This was used to copy Documents into Documents_backup directory.  
-- ***cp sauce1.txt sauce4.txt*** :This was used to copy contents of sauce1.txt into sauce4.txt.
-- ***cp sauce1.txt sauce2.txt sauce3.txt /home/olalonpei/username*** :This was used to copy the 3 .txt files into username directory. 
-- ***cp sauce.txt /home/olalonpei/BreakFast*** :This was used to copy the .txt into  the BreakFast directory. 
+- ***cp-R*** :This command was used to copy Documents into Documents_backup directory.  
+- ***cp sauce1.txt sauce4.txt*** :This command was used to copy contents of sauce1.txt into sauce4.txt.
+- ***cp sauce1.txt sauce2.txt sauce3.txt /home/olalonpei/username*** :This command was used to copy the 3 .txt files into username directory. 
+- ***cp sauce.txt /home/olalonpei/BreakFast*** :This command was used to copy the .txt into  the BreakFast directory. 
 
 ![`cp`](<6. cp -r command.PNG>)
 ![`cp`](<6. cp command to copy contents to a file into another file.PNG>)
@@ -79,52 +81,59 @@ it stands for copy. This command is used to copyy files or group files or direct
 ## 7. `mv` command
 stands for move. This command is used to rename file directories and move files from one location to another within a file system. two distinct funtions of mv command is renaming a file or directory and moving a file or driectory to another location. The following command was used;
 
-- ***mv mealprep1.txt /home/olalonpei/BreakFast*** :This was used to move the .txt file into the BreakFast directory
-- ***mv mealprep.txt prepmeal.txt*** :This was used to rename mealprep.txt to prepmeal.txt.
+- ***mv mealprep1.txt /home/olalonpei/BreakFast*** :This command was used to move the .txt file into the BreakFast directory
+- ***mv mealprep.txt prepmeal.txt*** :This command was used to rename mealprep.txt to prepmeal.txt.
 ![`mv`](<7. mv command to rename.PNG>)
 ![`mv`](<7. mv command.PNG>)
 
 
 
 ## 8. `mkdir` command
-This allows the user to create directories or folders. this command can create multiple directories at once as well as set the permission to create a directory in the parent directory. The following command was used;
+This command allows the user to create directories or folders. this command can create multiple directories at once as well as set the permission to create a directory in the parent directory. The following command was used;
 
-- ***mkdir FoodBlogging*** :This was used to create the ***FoodBlogging*** directory.
-- ***mkdir FoodBlogging/StreetFood*** :This was used to create a folder inside the ***FoodBlogging*** directory.
+- ***mkdir FoodBlogging*** :This command was used to create the ***FoodBlogging*** directory.
+- ***mkdir FoodBlogging/StreetFood*** :This command was used to create a folder inside the ***FoodBlogging*** directory.
 ![`mkdir`](<8. mkdir command.PNG>)
 
 
 
 ## 9. `rmdir` command
-This is used to remove the empty directories from the filesystem in linux. The following command was used;
-- ***rmdir -p FoodBlogging/StreetFood*** :This was used remove ***FoodBlogging*** directory, including all its ancestors.
+This command is used to remove the empty directories from the filesystem in linux. The following command was used;
+- ***rmdir -p FoodBlogging/StreetFood*** :This command was used remove ***FoodBlogging*** directory, including all its ancestors.
 
 ![`rmdir`](<9. rmdir command.PNG>)
 
 
 
 ## 10. `rm` command
-Is used to remove objects such as files, directories, symbolic links and so on from the file system. rm rmoves references to objects from the filesystem, where those objects might have had multiple references. By default, it does not remove directories. The following command was used;
-- ***rm remove*** :This was used to delete the remove folder.
-- ***rm reove2 reove3 reove4*** :This was used to delete reove2 reove3 reove4 folders.
+This command is used to remove objects such as files, directories, symbolic links and so on from the file system. rm rmoves references to objects from the filesystem, where those objects might have had multiple references. By default, it does not remove directories. The following command was used;
+- ***rm remove*** :This command was used to delete the remove folder.
+- ***rm reove2 reove3 reove4*** :This command was used to delete reove2 reove3 reove4 folders.
 
 ![`rm`](<10. rm command.PNG>)
 
 
 
 ## 11. `touch` command
-Is used to create a file without any content. the file created using the touch command is empty. This command can be used when the user doesn't have data to store at the time of file creation. The command used are; 
-- ***touch teletubies***  :This was used  to create a file.
-- ***touch tiwinkie dipsy lala po***  :This was used to create multiple files.
+This command is used to create a file without any content. the file created using the touch command is empty. This command can be used when the user doesn't have data to store at the time of file creation. The command used are; 
+- ***touch teletubies***  :This command was used  to create a file.
+- ***touch tiwinkie dipsy lala po***  :This command was used to create multiple files.
 
 ![`touch`](<11. touch command.PNG>)
 
 
 
 ## 12. `locate` command
-Is used to find files by name.
+This command is used to find files by name. The following command was used;
 
-- ***locate -i lunch*** :This was used to locate lunch
+- ***locate -i lunch*** :This command was used to locate lunch. 
 
 ![`locate`](<12. locate command.PNG>)
 
+
+
+## 13. find command
+This command was used to find files and directories. It supports searching by file,folder,name,creation data, modification date,owner and permissions. The following command was used;
+
+- ***find -name sauce1.txt*** :This command was used to find the sauce1.txt file.
+![`find`](<13. find command2.PNG>)
