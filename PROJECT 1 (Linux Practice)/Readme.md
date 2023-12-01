@@ -93,6 +93,13 @@ This allows the user to create directories or folders. this command can create m
 
 
 ## rmdir command
-This is used to remove the empty directories from the filesystem in linux. I used the following command;
-- ***rmdir -p FoodBlogging/StreetFood*** :I used this remove ***FoodBlogging*** directory, including all its ancestors.
+This is used to remove the empty directories from the filesystem in linux. The following command was used;
+- ***rmdir -p FoodBlogging/StreetFood*** :I used this remove ***FoodBlogging*** directory, including all its ancestors. 
 ![`rmdir`](<9. rmdir command.PNG>)
+
+
+## rm command
+Is used to remove objects such as files, directories, symbolic links and so on from the file system. rm rmoves references to objects from the filesystem, where those objects might have had multiple references. By default, it does not remove directories. The following command was used;
+- ***rm remove*** ::I used this to delete the remove folder.
+- ***rm reove2 reove3 reove4*** :I used this to delete reove2 reove3 reove4 folders.
+![`rm`](<10. rm command.PNG>)
