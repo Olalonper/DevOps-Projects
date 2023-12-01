@@ -132,7 +132,7 @@ This command was used to find files and directories. It supports searching by fi
 
 
 
-## 14. grep command
+## 14. `grep` command
 This command is used to filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern. The following command was used;
 - ***grep -i dodo sauce3.txt***  :This command used to search for word ***dodo*** regardless of the case sensitivity.
 - ***grep -c dodo sauce3.txt***  :This was used to search for the count of number of matches.
@@ -202,3 +202,8 @@ This command used to create archive and extract the archive files. tar command p
 - ***tar -xf archive.tar*** :This command was used to extract the file i archived.
 
 ![`tar`](<20. tar -cf -tf -xf command.PNG>)
+
+
+
+# FILE PERMISSION & OWNERSHIP
+
