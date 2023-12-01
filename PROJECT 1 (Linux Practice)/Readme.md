@@ -132,8 +132,19 @@ This command is used to find files by name. The following command was used;
 
 
 
-## 13. find command
+## 13. `find` command
 This command was used to find files and directories. It supports searching by file,folder,name,creation data, modification date,owner and permissions. The following command was used;
 
 - ***find -name sauce1.txt*** :This command was used to find the sauce1.txt file.
 ![`find`](<13. find command2.PNG>)
+
+
+
+## 14. grep command
+This command is used to filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern. The following command was used;
+- ***grep -i dodo sauce3.txt*** : This command used to search for word ***dodo*** regardless of the case sensitivity.
+- ***grep -c dodo sauce3.txt*** : This was used to search for the count of number of matches.
+- *** -l dod0 sauce3.txt sauce4.txt sauce.txt *** :This was used to search for the whole word in a .txt file.
+
+![`grep`](<14. grep command -i -c -l.PNG>)
+
