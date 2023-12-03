@@ -244,3 +244,10 @@ This command is a built-in command which is used to terminate processes manually
 
 
 
+
+## 25. `ping` command
+This command is used to check the network connectivity between host and server/host. The following command was used;
+- ***ping google.com***  : This command was used to check google.com is reachable.
+- ***ctrl+c***   :to stop pinging.
+
+
