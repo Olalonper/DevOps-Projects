@@ -250,4 +250,4 @@ This command is used to check the network connectivity between host and server/h
 - ***ping google.com***  : This command was used to check google.com is reachable.
 - ***ctrl+c***   :to stop pinging.
 
-
+![`ping`](<25. ping command.png>)
