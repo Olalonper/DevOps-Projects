@@ -281,3 +281,11 @@ This is used to show the linux processes, it provided a real time view of the ru
 
 
 
+## 29. `history` command
+This is used to view the previously executed command. The following command was used;
+***history***  :This was used to display commands used.
+
+![`history`](<29. history command.PNG>)
+
+
+
