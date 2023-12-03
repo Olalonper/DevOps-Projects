@@ -210,10 +210,17 @@ This command is used to create archive and extract the archive files. tar comman
 ## 21. `chmod` command
 This command is used to change access mode of a file. The following command was used.
 
-***chmod 777 sauce1.txt***  :This command was to chnage permission type of the sauce1.txt file.
+***chmod 777 sauce1.txt***  :This command was to change permission type of the sauce1.txt file.
+
 ![`chmod`](<21. chmod command-1.png>)
 
 
+
+## 22. `chown` command
+This command changes user ownership of a file, or directory. The following command was used;
+***chown olalonpei sauce.txt***  :This command was used to change owner of the sauce.txt file.
+
+![`chown`](<22. chown command.PNG>)
 
 
 
