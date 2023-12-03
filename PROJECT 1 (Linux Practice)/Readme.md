@@ -338,8 +338,23 @@ This command is used Is to obtain the DNS name and set. The following command wa
 
 ## 34. `useradd` `userdel` command
 This is used to add user accounts to a system while usedel deletes it. Only those who with root priviledges or sudo can run this command. The following commands was used.
-- ***sudo adduser ouser***  :This comman was used to create ***ouser*** account.
+- ***sudo adduser ouser***  :This comman was used to create the ***ouser*** account.
 - ***sudo userdel ouser***  :This command was used to delete the ***ouser*** account.
 
 ![`useradd`](<34. useradd command.PNG>)
 ![`userdel`](<34. userdel command.PNG>)
+
+
+
+## 35. `apt get`
+
+
+
+
+## 36. `nano` `vi`
+This allows users to edit and manage files via a text editor. The following command was used;
+- ***nano mealprep2.txt***  :This command was used pull up nano editor for the .txt file.
+- ***vi mealprep2.txt***  :This command was used to pull up vi editor for the .txt file.
+
+![`nano`](<36. nano comand.PNG>)
+![`vi`](<36. vi command.PNG>)
