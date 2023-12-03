@@ -332,3 +332,14 @@ This command is used Is to obtain the DNS name and set. The following command wa
 - ***hostname -I***  :This command was used to get all IP network addresses.
 
 ![`hostname`](<33. hostname command...PNG>)
+
+
+
+
+## 34. `useradd` `userdel` command
+This is used to add user accounts to a system while usedel deletes it. Only those who with root priviledges or sudo can run this command. The following commands was used.
+- ***sudo adduser ouser***  :This comman was used to create ***ouser*** account.
+- ***sudo userdel ouser***  :This command was used to delete the ***ouser*** account.
+
+![`useradd`](<34. useradd command.PNG>)
+![`userdel`](<34. userdel command.PNG>)
