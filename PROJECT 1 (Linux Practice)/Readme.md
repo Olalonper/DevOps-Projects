@@ -358,3 +358,12 @@ This allows users to edit and manage files via a text editor. The following comm
 
 ![`nano`](<36. nano comand.PNG>)
 ![`vi`](<36. vi command.PNG>)
+
+
+## 37. `alias` `unalias` command
+This command allows you to create a shortcut with the same functionality as a command, file name, or text while unalias is used to undo it. The following command was used;
+- ***alias Meals=m***  :This command was used to replaces Meals with m.
+- ***unalias Meals***  :This command was used to reemove an exisiting alias, in this case Meals.
+
+![`alias` `unalias`](<37. alias and unalias command.PNG>)
+
