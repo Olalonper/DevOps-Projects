@@ -268,3 +268,16 @@ This displays the information about the system. The following command was used;
 - ***uname -n*** :This command was used to print the hostname of the current computer
 
 ![`uname`](<27. uname command.PNG>)
+
+
+
+
+## 28. `top` command
+This is used to show the linux processes, it provided a real time view of the running system. The following command was used;
+- ***top***  :This was used to show real time view of the system.
+
+![`top`](<28. top command.png>)
+
+
+
+
