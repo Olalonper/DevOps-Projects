@@ -251,3 +251,4 @@ This command is used to check the network connectivity between host and server/h
 - ***ctrl+c***   :to stop pinging.
 
 ![`ping`](<25. ping command.png>)
+
