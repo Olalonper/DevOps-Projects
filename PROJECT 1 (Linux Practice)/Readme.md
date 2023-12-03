@@ -196,7 +196,7 @@ This command is used to display thy discrepancies in the files by comparing the 
 
 
 ## 20. `tar` command
-This command used to create archive and extract the archive files. tar command provides archiving functionality in linux. we can also use the linux tar command to create compressed or uncompressed archive file and also maintain and modify them. The following command was used;
+This command is used to create archive and extract the archive files. tar command provides archiving functionality in linux. we can also use the linux tar command to create compressed or uncompressed archive file and also maintain and modify them. The following command was used;
 - ***tar -cf archive.tar teletubies dipsy lala po*** :This command was used to archive the files
 - ***tar -tf archive.tar*** :This command was used to diplay the files i archived
 - ***tar -xf archive.tar*** :This command was used to extract the file i archived.
@@ -208,7 +208,7 @@ This command used to create archive and extract the archive files. tar command p
 # FILE PERMISSION & OWNERSHIP
 
 ## 21. `chmod` command
-is used to chnage access mode of a file. The following command was used.
+This command is used to change access mode of a file. The following command was used.
 
 ***chmod 777 sauce1.txt***  :This command was to chnage permission type of the sauce1.txt file.
 ![`chmod`](<21. chmod command-1.png>)
