@@ -231,3 +231,16 @@ This command is used to list all jobs on the system wether active or stopped. Th
 - ***jobs -p*** :This command was used this to display the process ID.
 
 ![`jobs`](<23. jobs command...PNG>)
+
+
+
+
+## 24. `kill` command
+This command is a built-in command which is used to terminate processes manually. The following command was used;
+- ***ps ux*** :This command was used to list the jobs running 
+- ***kill -9 65*** :This command used to kill ***nano mealname.txt***
+
+![`kill`](<24. kill command...PNG>)
+
+
+
