@@ -289,3 +289,10 @@ This is used to view the previously executed command. The following command was 
 
 
 
+## 30. `man` command
+This is used to display the user manual of any command that can run on the terminal. The following command was used;
+***man ls***  :This command was used to diplay manual for ls.
+
+![`man`](<30. man ls command.PNG>)
+
+
