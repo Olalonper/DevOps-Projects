@@ -311,6 +311,7 @@ This is a built-in command that allows users to display lines of text or strings
 
 
 
+
 ## 32. `zip` `unzip` command
 Zip command is used to compress files to reduce file size and is also used to as file package utility, each file is stored in a single .zip file with the extension zip. WHILE unzip command will list, test, or extract files from a zip archive. The following command was used;
  ***zip latest.zip mealname.txt mealname2.txt mealname3.txt*** :This command was used to zip the mentioned .txt file.
@@ -318,3 +319,16 @@ Zip command is used to compress files to reduce file size and is also used to as
 
 ![`zip`](<32. zip command.PNG>)
 ![`unzip`](<32. unzip command.PNG>)
+
+
+
+
+## 33. `hostname` command
+This command is used Is to obtain the DNS name and set. The following command was used;
+- ***hostname***  :This was command was used to obtain the system hostname.
+- ***hostname -a***  :This command was used to display all aliases of the host.
+- ***hostname -A***  :This command was used to display the FQDN (Fully Qualified Domian Name) but it returned nothing.
+- ***hostname -i***  :This command was used to display the IP address of the host
+- ***hostname -I***  :This command was used to get all IP network addresses.
+
+![`hostname`](<33. hostname command...PNG>)
