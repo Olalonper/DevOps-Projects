@@ -207,3 +207,13 @@ This command used to create archive and extract the archive files. tar command p
 
 # FILE PERMISSION & OWNERSHIP
 
+## 21. `chmod` command
+is used to chnage access mode of a file. The following command was used.
+
+***chmod 777 sauce1.txt***  :This command was to chnage permission type of the sauce1.txt file.
+![`chmod`](<21. chmod command-1.png>)
+
+
+
+
+
