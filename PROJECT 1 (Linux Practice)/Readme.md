@@ -251,3 +251,20 @@ This command is used to check the network connectivity between host and server/h
 
 ![`ping`](<25. ping command.png>)
 
+
+
+
+## 26. `wget` command
+wget is used to download files from the server even when the user has not logged on t the system and it can work in the background without hindering the current process. The following command was used;
+- ***wget https://wordpress.org/latest.zip***  :This command was used to download and archive wordpress web.
+
+![`wget`](<26. wget command.PNG>)
+
+
+## 27. `uname` command
+This displays the information about the system. The following command was used;
+- ***uname -a*** :This commandwas used to print information about the system
+- ***uname -s*** :This command was used to print the kernel name.
+- ***uname -n*** :This command was used to print the hostname of the current computer
+
+![`uname`](<27. uname command.PNG>)
