@@ -296,3 +296,25 @@ This is used to display the user manual of any command that can run on the termi
 ![`man`](<30. man ls command.PNG>)
 
 
+
+
+## 31. `echo` command
+This is a built-in command that allows users to display lines of text or strings that are passed as arguments. Options are the various options available for modifying the behavior of the echo command such as (-e -n -E \b \c \a etc) while String is the what we want to display that is the word,sentence,statement.The following command was used;
+- ***echo"Meals for Meals"*** 
+:This command was used to display Meals for Meals.
+- ***echo -n "Meals for Meals"***  :This command was used to omit echoing trailing newline
+- ***echo -e "Meals \bfor \bMeals"*** :This command was used to remove all the spaces in between the text.
+- ***echo -e "Meals \cfor Meals"*** :This command was used to suppress trailing new line and to continue without emitting new line.
+- ***echo -e "\aMeals for Meals"***  :This command was used to play sound
+
+![`echo`](<31. echo -e -n command.PNG>)
+
+
+
+## 32. `zip` `unzip` command
+Zip command is used to compress files to reduce file size and is also used to as file package utility, each file is stored in a single .zip file with the extension zip. WHILE unzip command will list, test, or extract files from a zip archive. The following command was used;
+ ***zip latest.zip mealname.txt mealname2.txt mealname3.txt*** :This command was used to zip the mentioned .txt file.
+- ***unzip latest.zip mealname.txt mealname2.txt mealname3.txt*** :This command was used to unzip the mentioned .txt file.
+
+![`zip`](<32. zip command.PNG>)
+![`unzip`](<32. unzip command.PNG>)
