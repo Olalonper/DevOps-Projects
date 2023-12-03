@@ -197,9 +197,9 @@ This command is used to display thy discrepancies in the files by comparing the 
 
 ## 20. `tar` command
 This command is used to create archive and extract the archive files. tar command provides archiving functionality in linux. we can also use the linux tar command to create compressed or uncompressed archive file and also maintain and modify them. The following command was used;
-- ***tar -cf archive.tar teletubies dipsy lala po*** :This command was used to archive the files
-- ***tar -tf archive.tar*** :This command was used to diplay the files i archived
-- ***tar -xf archive.tar*** :This command was used to extract the file i archived.
+- ***tar -cf archive.tar teletubies dipsy lala po*** :This command was used to archive the ***teletubies dipsy lala po*** files
+- ***tar -tf archive.tar*** :This command was used to diplay the ***teletubies dipsy lala po*** files archived
+- ***tar -xf archive.tar*** :This command was used to extract ***teletubies dipsy lala po*** the file archived.
 
 ![`tar`](<20. tar -cf -tf -xf command.PNG>)
 
@@ -208,8 +208,8 @@ This command is used to create archive and extract the archive files. tar comman
 # FILE PERMISSION & OWNERSHIP
 
 ## 21. `chmod` command
-This command is used to change access mode of a file. The following command was used.
-- ***chmod 777 sauce1.txt***  :This command was to change permission type of the sauce1.txt file.
+This command is used to change access mode of a file. The following command was used;
+- ***chmod 777 sauce1.txt***  :This command was to change permission type of the ***sauce1.txt*** file.
 
 ![`chmod`](<21. chmod command-1.png>)
 
@@ -217,9 +217,17 @@ This command is used to change access mode of a file. The following command was 
 
 ## 22. `chown` command
 This command changes user ownership of a file, or directory. The following command was used;
-- ***chown olalonpei sauce1.txt***  :This command was used to change owner of the sauce.txt file.
+- ***chown olalonpei sauce1.txt***  :This command was used to change owner of the ***sauce1.txt*** file.
 
 ![`chown`](<22. chown commandd.PNG>)
 
 
 
+
+## 23. `jobs` command
+This command is used to list all jobs on the system wether active or stopped. The following command was used;
+- ***jobs*** :This command used to display the status of jobs in the current shell
+- ***jobs -l*** :This command was used to list process IDs in addition to the normal information
+- ***jobs -p*** :This command was used this to display the process ID.
+
+![`jobs`](<23. jobs command...PNG>)
