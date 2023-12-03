@@ -218,9 +218,9 @@ This command is used to change access mode of a file. The following command was 
 
 ## 22. `chown` command
 This command changes user ownership of a file, or directory. The following command was used;
-***chown olalonpei sauce.txt***  :This command was used to change owner of the sauce.txt file.
+***chown olalonpei sauce1.txt***  :This command was used to change owner of the sauce.txt file.
 
-![`chown`](<22. chown command.PNG>)
+![`chown`](<22. chown commandd.PNG>)
 
 
 
