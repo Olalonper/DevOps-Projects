@@ -367,3 +367,35 @@ This command allows you to create a shortcut with the same functionality as a co
 
 ![`alias` `unalias`](<37. alias and unalias command.PNG>)
 
+
+
+
+## 38. `su` command
+this command is used to switch to another user account
+- ***su -p olalonpei***  :This command was used to switch to a user that is ***olalonpei***
+- ***su -l newuser***  :This command was used to run a login script to switch to a different username that is ***newuser***
+
+![`su`](<38. su -l -p command.PNG>)
+
+
+
+
+## 39. `htop` command
+htop command in linux system is a command line utility that allows the user to interactively monitor the system's vital resources or server's processes in real time. The following command was used;
+- ***htop -C***  :This command was used to start htop in monochrome mode
+- ***htop -u***  :This command was used to show only the processes of a given user
+
+![`htop`](<39. htop -u command.PNG>)
+![`htop`](<39. htop -C command.PNG>)
+
+
+
+## 40. `ps` command
+This command is used to list the currently running processes and their PIDs along with some other information depends on different options. The following commands was used;
+- ***ps***  :Shows the processes for the current shell
+- ***ps -u***  :This command was used to list processes associated with ***olalonpei***(user)
+- ***ps -A***  :This command was used to to view all running processes.
+- ***ps -T***  :This command was used to to display all processes associated with the current shell session.
+
+![`ps`](<40. ps -u -A -T command.PNG>)
+![`ps`](<40. ps command.PNG>)
