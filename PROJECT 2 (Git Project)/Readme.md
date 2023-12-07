@@ -56,3 +56,19 @@ This was achieved by doing the below;
   - ***git checkout main***  :This command was used to change into the ***main*** branch.
 
 ![`Changing into an old branch`](<Images/5. Changing into an Old Branch.PNG>)
+
+
+
+
+## 6. `Merging a branch into another branch`
+This was acheived by doing the following;
+- Change into branch A and run merge command;
+  - echo "adding another section of how interesting this is" > forcommit.txt  :This command was used to display lines of text.
+  - ***git status***  :This command was used to check the status of the .txt file.
+  - ***git add .***  :This command was used to add changes.
+  - ***git commit -m "adding a section of how interesting this is"***  :This command was used to commit the chnages.
+  - ***git chechout north***  :This command was used to exit the ***main*** branch and enter into the ***north*** branch.
+  - ***git merge main***  :This command was used to merge content of ***main*** branch with ***north*** branch
+
+![`Merging a branch into another branch`](<Images/6. Merging a Branch into another Branch.PNG>)
+
