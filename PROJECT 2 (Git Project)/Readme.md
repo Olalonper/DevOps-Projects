@@ -43,6 +43,6 @@ This was achieved by doing the below;
 ## 4. `Listing your git branch`
 This was achieved by doing the below;
 - List the branch(es) on your local git repository.
- - ***git branch***  :This command was used to list the branch.
- 
+  - ***git branch***  :This command was used to list the branch.
+
 ![`Listing your git branch`](<Images/4. Listing your git Branch.PNG>)
