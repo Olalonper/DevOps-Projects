@@ -25,5 +25,14 @@ This was achieved by doing the below;
   - ***git add .***  :This command was used to add changes.
 - Commit the changes and run command.
   - ***git commit -m "initial commit"***  :This command was used to commit the chnages ***-m*** flag is a parameter to pass in the commit message.
-  
+
   ![`Making yout first commit`](<Images/2. Making your first commit.PNG>)
+
+
+
+
+  ## 3. `Making your first branch`
+  This was achieved by doing the below;
+  - Make a new branch by.
+     - ***git checkout -b north***  :This command was used to create ***north*** branch.The ***-b*** flag helps create and change into a new branch.
+![`Making your first branch`](<Images/3. Making your first Branch.PNG>)
