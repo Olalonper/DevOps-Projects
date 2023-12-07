@@ -47,3 +47,12 @@ This was achieved by doing the below;
   - ***git branch***  :This command was used to list the branch.
 
 ![`Listing your git branch`](<Images/4. Listing your git Branch.PNG>)
+
+
+
+## 5. `Changing into an old branch`
+This was achieved by doing the below;
+- Change into an existing or old branch
+  - ***git checkout main***  :This command was used to change into the ***main*** branch.
+
+![`Changing into an old branch`](<Images/5. Changing into an Old Branch.PNG>)
