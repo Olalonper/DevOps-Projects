@@ -33,8 +33,8 @@ This was achieved by doing the below;
 
   ## 3. `Making your first branch`
   This was achieved by doing the below;
-  - Make a new branch.
-  ***git checkout -b north***  :This command was used to create ***north*** branch.The ***-b*** flag helps create and change into a new branch.
+- Make a new branch.
+    - ***git checkout -b north***  :This command was used to create ***north*** branch.The ***-b*** flag helps create and change into a new branch.
 
 ![`Making your first branch`](<Images/3. Making your first Branch.PNG>)
 
