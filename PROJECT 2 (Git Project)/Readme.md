@@ -63,7 +63,7 @@ This was achieved by doing the below;
 ## 6. `Merging a branch into another branch`
 This was acheived by doing the following;
 - Change into branch A and run merge command;
-  - echo "adding another section of how interesting this is" > forcommit.txt  :This command was used to display lines of text.
+  - ***echo "adding another section of how interesting this is" > forcommit.txt***  :This command was used to display lines of text.
   - ***git status***  :This command was used to check the status of the .txt file.
   - ***git add .***  :This command was used to add changes.
   - ***git commit -m "adding a section of how interesting this is"***  :This command was used to commit the chnages.
@@ -71,4 +71,14 @@ This was acheived by doing the following;
   - ***git merge main***  :This command was used to merge content of ***main*** branch with ***north*** branch
 
 ![`Merging a branch into another branch`](<Images/6. Merging a Branch into another Branch.PNG>)
+
+
+
+
+## 7. `Deleting git branch`
+This was acheived by doing the following;
+- To delete a Git branch.
+   - ***git branch -d north***  :This command was used to delete the ***north*** branch.
+
+![`Deleting git branch`](<Images/7. Deleting git branch.PNG>)   
 
