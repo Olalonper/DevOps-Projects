@@ -34,5 +34,15 @@ This was achieved by doing the below;
   ## 3. `Making your first branch`
   This was achieved by doing the below;
   - Make a new branch by.
-     - ***git checkout -b north***  :This command was used to create ***north*** branch.The ***-b*** flag helps create and change into a new branch.
+    - ***git checkout -b north***  :This command was used to create ***north*** branch.The ***-b*** flag helps create and change into a new branch.
 ![`Making your first branch`](<Images/3. Making your first Branch.PNG>)
+
+
+
+
+## 4. `Listing your git branch`
+This was achieved by doing the below;
+- List the branch(es) on your local git repository.
+ - ***git branch***  :This command was used to list the branch.
+ 
+![`Listing your git branch`](<Images/4. Listing your git Branch.PNG>)
