@@ -141,6 +141,7 @@ This is schieved by doing the below;
   - ***git pull***  :This command was used as git bash suggested but that also wasnt working.
   - ***git push orign main***  :This command was used but it wasnt working as well.
   - ***git pull origin main***  This command was used to get rid of the error butit was returning **fatal: refusing to merge unrelated histories**. 
+  
 ***SOLUTIONS***
   - ***git pull --rebase origin main***  :This command was used to local commit ontop of remote head. 
   - ***git push -u origin main*** :This command was used to push the local repository to the remote branch 
