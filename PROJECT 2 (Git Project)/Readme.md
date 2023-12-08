@@ -143,8 +143,8 @@ This is schieved by doing the below;
   - ***git pull origin main***  This command was used to get rid of the error butit was returning **fatal: refusing to merge unrelated histories**. 
 
 > ### SOLUTIONS
-  - ***git pull --rebase origin main***  :This command was used to local commit ontop of remote head. 
-  - ***git push -u origin main*** :This command was used to push the local repository to the remote branch 
+> - ***git pull --rebase origin main***  :This command was used to local commit ontop of remote head. 
+> - ***git push -u origin main*** :This command was used to push the local repository to the remote branch 
 
 ![`Pushing your local git repository to your remote github repository`](<Images/8. Pushing your local git repository to your remote github repository.PNG>)
 
