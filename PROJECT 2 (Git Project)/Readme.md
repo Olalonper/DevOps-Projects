@@ -142,12 +142,20 @@ This is schieved by doing the below;
   - ***git push orign main***  :This command was used but it wasnt working as well.
   - ***git pull origin main***  This command was used to get rid of the error butit was returning **fatal: refusing to merge unrelated histories**. 
 
-> ### SOLUTIONS
-> - ***git pull --rebase origin main***  :This command was used to local commit ontop of remote head. 
-> - ***git push -u origin main*** :This command was used to push the local repository to the remote branch 
+### SOLUTIONS
+  - ***git pull --rebase origin main***  :This command was used to local commit ontop of remote head. 
+  - ***git push -u origin main*** :This command was used to push the local repository to the remote branch 
 
 ![`Pushing your local git repository to your remote github repository`](<Images/8. Pushing your local git repository to your remote github repository.PNG>)
 
 ![`Pushing your local git repository to your remote github repository`](<Images/8. Pushing your local git repository to your remote github repository2.PNG>)
 
 
+
+
+## 9. `Cloning remote git repository`
+This is achieved with the below;
+- Make a copy of remote repository in local machine.
+  - ***git clone https://github.com/Olalonper/GitPRJ.git***   :This command was used to copy GitPRJ(remote directory) into the local machine (Documents)
+
+![`Cloning remote git repository`](<Images/9. Cloning remote git repositiory.PNG>)
