@@ -21,7 +21,7 @@ Apache is an open source software available for free. it runs on 67% of all webs
 - `SudoAptUpdate (1)` `SudoAptUpdate (2)` `SudoAptUpdate (3)` (***$ sudo apt update***) : This command was used to update a list of packages
 - `SudoAptInstallApache2 (1)` `SudoAptInstallApache2 (2)` `SudoAptInstallApache2 (3)` (***$ sudo apt install apache2***) : This command was used to run apache2 package installation
 - `SudoSystemctlStatusApache2` (***$ sudo systemctl status apache2***) : This command was used to verify that Apache is running using. If it is green and running that means that the apache was installed correctly.
-- `CurlWebAccess (1)` `CurlWebAccess (2)` `CurlWebAccess (3)`(***$ curl http://localhost:80***) : This command was used to request the apache HTTP Server on port 80 using the DNS name.
+- `CurlWebAccess (1)` `CurlWebAccess (2)` `CurlWebAccess (3)`(***$ curl http://localhost:80***) : This command was used to request the apache HTTP Server on port 80 using the DNS name and this can be pasted on your web browser to enable it display the Ubuntu Apache2 default page
 
 ![`SudoAptUpdate (1)`](<Images/SudoAptUpdate (1).PNG>)
 ![`SudoAptUpdate (2)`](<Images/SudoAptUpdate (2).PNG>)
@@ -36,3 +36,4 @@ Apache is an open source software available for free. it runs on 67% of all webs
 ![`CurlWebAccess (1)`](<Images/CurlWebAccess (1).PNG>)
 ![`CurlWebAccess (2)`](<Images/CurlWebAccess (2).PNG>)
 ![`CurlWebAccess (3)`](<Images/CurlWebAccess (3).PNG>)
+![`UbuntuApache2Default page`](<Images/UbuntuApache2Default page.PNG>)
