@@ -77,3 +77,21 @@ PHP is the component of our setup that will process code to display dynamic cont
 ![`InstallPHPandDependencies (2)`](<Images/InstallPHPandDependencies (2).PNG>)
 ![`InstallPHPandDependencies (3)`](<Images/InstallPHPandDependencies (3).PNG>)
 ![`php-v`](Images/php-v.PNG)
+
+
+## Enabling PHP on the website
+With the default DirectoryIndex settings on Apache, a file named index.html will always take precedence over an index.php file. This is useful for setting up maintenance pages in PHP applications, by creating a temporary index.html file containing an informative message to visitors. Because this page will take precedence over the index.php page, it will then become the landing page for the application. once maintenance is over, the index.html is renamed or removed from the document root, bringing back the regular apllication page.
+
+- ***sudo vim /etc/apache2/mods-enabled/dir.conf*** : This command was used to edit the vim text editor and change the order in which the index.php file is listed within the DirectoryIndex directive. Using the below.
+<IfModule mod_dir.c>
+        #Change this:
+        #DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
+        #To this:
+        DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+</IfModule>.
+
+- ***$ sudo systemctl reload apache2*** : This command was used reload Apache so the above changes can take effect.
+
+![`SudovimetcApache2modsenableddir.conf`](Images/SudovimetcApache2modsenableddir.conf.PNG)
+![`ChangePHPhomepage`](Images/ChangePHPhomepage.PNG)
+![`sudo reload`](<Images/sudo reload.PNG>)
