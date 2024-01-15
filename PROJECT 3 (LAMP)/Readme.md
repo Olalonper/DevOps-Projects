@@ -90,8 +90,17 @@ With the default DirectoryIndex settings on Apache, a file named index.html will
         DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
 </IfModule>.
 
+
 - ***$ sudo systemctl reload apache2*** : This command was used reload Apache so the above changes can take effect.
+
+- `projectlamp` (***$ nano /var/www/projectlamp/index.php***) : This command was used to create a new file named index.php inside the customer web root folder as a PHP script will be used to test that Php is correctly installed and configured on the server, and also to confirm that Apache is able to handle and process requestd for PHP files. the PHP code below is to be pasted in the blank nano text editor
+<?php
+phpinfo();
+
+
 
 ![`SudovimetcApache2modsenableddir.conf`](Images/SudovimetcApache2modsenableddir.conf.PNG)
 ![`ChangePHPhomepage`](Images/ChangePHPhomepage.PNG)
 ![`sudo reload`](<Images/sudo reload.PNG>)
+!['projectlamp'](Images/projectlamp.PNG)
+![`PHPCodeUsedInNanoTextEditorForPHPLandingpage`](Images/PHPCodeUsedInNanoTextEditorForPHPLandingpage.PNG)
