@@ -62,3 +62,18 @@ MySQL is a popular database management system used within PHP environments
 ![`MySQLSecureInstallationWithPASSWORDchange`](Images/MySQLSecureInstallationWithPASSWORDchange.PNG)
 
 ![`MySQLtestLoginwithChangedPassword`](Images/MySQLtestLoginwithChangedPassword.PNG)
+
+
+
+## Installing PHP
+PHP is the component of our setup that will process code to display dynamic content to the end user.
+
+- ***$ sudo apt install php libapache2-mod-php php-mysql*** : This command was used to enable apache to handle PHP files. Core PHP packages will automatically be installed as dependencies.
+
+
+- ***php -v*** : This command was used to confirm the PHP version that was installed
+
+![`InstallPHPandDependencies (1)`](<Images/InstallPHPandDependencies (1).PNG>)
+![`InstallPHPandDependencies (2)`](<Images/InstallPHPandDependencies (2).PNG>)
+![`InstallPHPandDependencies (3)`](<Images/InstallPHPandDependencies (3).PNG>)
+![`php-v`](Images/php-v.PNG)
