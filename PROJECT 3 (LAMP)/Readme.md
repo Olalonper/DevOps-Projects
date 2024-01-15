@@ -51,8 +51,6 @@ MySQL is a popular database management system used within PHP environments
 - `MySQLtestLoginwithChangedPassword`(***$ sudo mysql -p***) : This command was used to test if one is able to log into the MySQL console, -p flag in this command will prompt you for the password used after changing the root user password and to exit the MySQL console for this you will use the password you created in the above step, type ***mysql> exit***
 
 
-
-
 ![`InstallMySQLserver (1)`](<Images/InstallMySQLserver (1).PNG>)
 ![`InstallMySQLserver (2)`](<Images/InstallMySQLserver (2).PNG>)
 ![`InstallMySQLserver (3)`](<Images/InstallMySQLserver (3).PNG>)
