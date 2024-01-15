@@ -82,22 +82,12 @@ PHP is the component of our setup that will process code to display dynamic cont
 ## Enabling PHP on the website
 With the default DirectoryIndex settings on Apache, a file named index.html will always take precedence over an index.php file. This is useful for setting up maintenance pages in PHP applications, by creating a temporary index.html file containing an informative message to visitors. Because this page will take precedence over the index.php page, it will then become the landing page for the application. once maintenance is over, the index.html is renamed or removed from the document root, bringing back the regular apllication page.
 
-- ***sudo vim /etc/apache2/mods-enabled/dir.conf*** : This command was used to edit the vim text editor and change the order in which the index.php file is listed within the DirectoryIndex directive. Using the below.
-<IfModule mod_dir.c>
-        #Change this:
-        #DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
-        #To this:
-        DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
-</IfModule>.
+- ***sudo vim /etc/apache2/mods-enabled/dir.conf*** : This command was used to edit the vim text editor and change the order in which the index.php file is listed within the DirectoryIndex directive, using the code in the nano text editior.
 
 
 - ***$ sudo systemctl reload apache2*** : This command was used reload Apache so the above changes can take effect.
 
-- `projectlamp` (***$ nano /var/www/projectlamp/index.php***) : This command was used to create a new file named index.php inside the customer web root folder as a PHP script will be used to test that Php is correctly installed and configured on the server, and also to confirm that Apache is able to handle and process requestd for PHP files. the PHP code below is to be pasted in the blank nano text editor
-<?php
-phpinfo();
-
-
+- `projectlamp` (***$ nano /var/www/projectlamp/index.php***) : This command was used to create a new file named index.php inside the customer web root folder as a PHP script will be used to test that Php is correctly installed and configured on the server, and also to confirm that Apache is able to handle and process requestd for PHP files. the PHP code is pasted in the nano text editor.
 
 ![`SudovimetcApache2modsenableddir.conf`](Images/SudovimetcApache2modsenableddir.conf.PNG)
 ![`ChangePHPhomepage`](Images/ChangePHPhomepage.PNG)
