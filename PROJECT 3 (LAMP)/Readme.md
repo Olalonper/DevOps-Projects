@@ -46,7 +46,7 @@ Apache is an open source software available for free. it runs on 67% of all webs
 - ***$ curl http://localhost:80*** : This command was used to request the apache HTTP Server on port 80 using the DNS name eithier this can be pasted on your web browser to enable it display the Ubuntu Apache2 default page.
     - see image `CurlWebAccess (1)` below :point_down:![`CurlWebAccess (1)`](<Images/CurlWebAccess (1).PNG>)
     - see image `CurlWebAccess (2)` below :point_down:![`CurlWebAccess (2)`](<Images/CurlWebAccess (2).PNG>)
-    - see image `CurlWebAccess (3)` below :point_down:![`CurlWebAccess (3)`](<Images/CurlWebAccess (3).PNG>)
+    - see image `CurlWebAccess (3)` below :point_down:![`CurlWebAccess (3)`](<Images/CurlWebAccess (3).PNG>).
 
 - OR you can copy the IP address and paste it on your browser to confim that Apache2 works correctly. either you do the above or below you shpuld get the below in your web browser.
     - see image  `UbuntuApache2Default page` below :point_down:![`UbuntuApache2Default page`](<Images/UbuntuApache2Default page.PNG>)
@@ -94,7 +94,7 @@ With the default DirectoryIndex settings on Apache, a file named index.html will
     - see image `ChangePHPhomepage` below :point_down:![`ChangePHPhomepage`](Images/ChangePHPhomepage.PNG)
 
 
-- ***$ sudo systemctl reload apache2*** : This command was used reload Apache so the above changes can take effect. see image `sudosystemctlreloadapache2` below :point_down:![`sudosystemctlreloadapache2`](<Images/sudo reload.PNG>)
+- ***$ sudo systemctl reload apache2*** : This command was used reload Apache so the above changes can take effect. see image `sudo reload` below :point_down:![`sudo reload`](<Images/sudo reload.PNG>)
 
 
 - ***$ nano /var/www/projectlamp/index.php*** : This command was used to create a new file named index.php inside the customer web root folder as a PHP script will be used to test that Php is correctly installed and configured on the server, and also to confirm that Apache is able to handle and process requestd for PHP files. the PHP code is pasted in the nano text editor. see image `projectlamp` below :point_down:!['projectlamp'](Images/projectlamp.PNG)
@@ -128,7 +128,7 @@ With the default DirectoryIndex settings on Apache, a file named index.html will
 - ***$ sudo apache2ctl configtest*** : This command was used to make sure the configuration file doesnt contain syntax errors.
     - see image `PHPlampProjectConfig (1)` below :point_down:![`PHPlampProjectConfig (1)`](<Images/PHPlampProjectConfig (1).PNG>)
 
-- ***$ sudo systemctl reload apache2*** : This command was used to reload Apache so the changes take effect. see image `sudosystemctlreloadapache2` below :point_down:![`ssudosystemctlreloadapache2`](Images/sudoreload.PNG)
+- ***$ sudo systemctl reload apache2*** : This command was used to reload Apache so the changes take effect. see image `sudoreload` below :point_down:![`sudoreload`](Images/sudoreload.PNG)
 
 
 - After the above has been done correctly, from the prior Ubuntu Apache2 Ubuntu default page refresh and you will see the PHP landing page.
