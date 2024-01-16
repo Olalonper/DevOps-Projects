@@ -83,8 +83,7 @@ PHP is the component of our setup that will process code to display dynamic cont
     - see image `InstallPHPandDependencies (2)` below :point_down:![`InstallPHPandDependencies (2)`](<Images/InstallPHPandDependencies (2).PNG>)
     - see image `InstallPHPandDependencies (3)` below :point_down:![`InstallPHPandDependencies (3)`](<Images/InstallPHPandDependencies (3).PNG>)
 
-- ***php -v*** : This command was used to confirm the PHP version that was installed.
-    - see image `php-v` below :point_down:![`php-v`](Images/php-v.PNG)
+- ***php -v*** : This command was used to confirm the PHP version that was installed. see image `php-v` below :point_down:![`php-v`](Images/php-v.PNG)
 
 
 ## Enabling PHP on the website
