@@ -137,9 +137,7 @@ See image `InstallPHPandDependencies (2)` below :point_down:
 See image `InstallPHPandDependencies (3)` below :point_down:
 ![`InstallPHPandDependencies (3)`](<Images/InstallPHPandDependencies (3).PNG>)
 
-- ***php -v*** : This command was used to confirm the PHP version that was installed
-
-See image `php-v` below :point_down:
+- ***php -v*** : This command was used to confirm the PHP version that was installed. See image `php-v` below :point_down:
 ![`php-v`](Images/php-v.PNG)
 
 
@@ -156,15 +154,11 @@ See image `ChangePHPhomepage` below :point_down:
 ![`ChangePHPhomepage`](Images/ChangePHPhomepage.PNG)
 
 
-- ***$ sudo systemctl reload apache2*** : This command was used reload Apache so the above changes can take effect.
-
-See image `sudo reload` below :point_down:
+- ***$ sudo systemctl reload apache2*** : This command was used reload Apache so the above changes can take effect. See image `sudo reload` below :point_down:
 ![`sudo reload`](<Images/sudo reload.PNG>)
 
 
-- `projectlamp` ***$ nano /var/www/projectlamp/index.php*** : This command was used to create a new file named index.php inside the customer web root folder as a PHP script will be used to test that Php is correctly installed and configured on the server, and also to confirm that Apache is able to handle and process requestd for PHP files. the PHP code is pasted in the nano text editor.
-
-See image `projectlamp` below :point_down:
+- `projectlamp` ***$ nano /var/www/projectlamp/index.php*** : This command was used to create a new file named index.php inside the customer web root folder as a PHP script will be used to test that Php is correctly installed and configured on the server, and also to confirm that Apache is able to handle and process requestd for PHP files. the PHP code is pasted in the nano text editor. See image `projectlamp` below :point_down:
 !['projectlamp'](Images/projectlamp.PNG)
 
 
@@ -175,22 +169,52 @@ See image `PHPCodeUsedInNanoTextEditorForPHPLandingpage` below :point_down:
 
 ## Creating a Virtual Host for your Website using Apache
 ***$ sudo mkdir /var/www/projectlamp*** : This command was used to create the directory for ***projectlamp***.
+
+See image `CreatedDirectoryforProjectLAMP` below :point_down:
+![`CreatedDirectoryforProjectLAMP`](Images/CreatedDirectoryforProjectLAMP.PNG)
+
+
 ***$ sudo chown -R $USER:$USER /var/www/projectlamp*** : This command was used to assign ownership of the directory with the ***$USER*** environment variab, which will reference the current system user.
+
+See image `AssignedOwnershipWithThe$USER` below :point_down:
+![`AssignedOwnershipWithThe$USER`](Images/AssignedOwnershipWithThe$USER.PNG)
+
 ***$ sudo vi /etc/apache2/sites-available/projectlamp.conf*** : This command was used create and open a new configuration in Apache's ***sites-available***
  directory using any preferred command-line editor in this case vi was used. The virtual host code was pasted in blank vi text editor.
 
+See image `PHPlampProjectConfig (1)` below :point_down:
+ ![`PHPlampProjectConfig (1)`](<Images/PHPlampProjectConfig (1).PNG>)
+
+ See image `PHPlampProjectConfig 2` below :point_down:
+![`PHPlampProjectConfig 2`](<Images/PHPlampProjectConfig 2.PNG>)
+
 ***$ sudo ls /etc/apache2/sites-available*** : This command was used to show the new file in the ***sites-available*** directory You will see something like this 000-default.conf  default-ssl.conf  projectlamp.conf
+
+See image `PHPlampProjectConfig (1)` below :point_down:
+ ![`PHPlampProjectConfig (1)`](<Images/PHPlampProjectConfig (1).PNG>)
 
 ***$ sudo a2ensite projectlamp*** : This command was used to enable the new virtual host.
 
+See image `PHPlampProjectConfig (1)` below :point_down:
+ ![`PHPlampProjectConfig (1)`](<Images/PHPlampProjectConfig (1).PNG>)
+
+
 ***$ sudo a2dissite 000-default*** : This command was used to disable the defaukt website that comes installed with Apache. This is required if you're not using a custom domain name, because in this case Apache's default configuration would overwrite the virtual host.
+
+See image `PHPlampProjectConfig (1)` below :point_down:
+ ![`PHPlampProjectConfig (1)`](<Images/PHPlampProjectConfig (1).PNG>)
 
 ***$ sudo apache2ctl configtest*** : This command was used to make sure the configuration file doesnt contain syntax errors. 
 
+See image `PHPlampProjectConfig (1)` below :point_down:
+ ![`PHPlampProjectConfig (1)`](<Images/PHPlampProjectConfig (1).PNG>)
+
 ***$ sudo systemctl reload apache2*** : This command was used to reload Apache so the changes take effect.
 
-![`reatedDirectoryforProjectLAMP`](Images/CreatedDirectoryforProjectLAMP.PNG)
-![`AssignedOwnershipWithThe$USER`](Images/AssignedOwnershipWithThe$USER.PNG)
-![`PHPlampProjectConfig (1)`](<Images/PHPlampProjectConfig (1).PNG>)
+See image `sudoreload` below :point_down:
 ![`sudoreload`](Images/sudoreload.PNG)
+
+
+After the above has been done correctly, from the prior Ubuntu Apache2 Ubuntu default page refresh and you will see the PHP landing page.
+See image `phpLandingPage` below :point_down:
 ![`phpLandingPage`](Images/phpLandingPage.PNG)
