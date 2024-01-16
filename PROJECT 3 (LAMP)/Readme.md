@@ -68,11 +68,14 @@ See image `SudoSystemctlStatusApache2` below :point_down:
 
 - ***$ curl http://localhost:80*** : This command was used to request the apache HTTP Server on port 80 using the DNS name eithier this can be pasted on your web browser to enable it display the Ubuntu Apache2 default page. 
 
+
 See image `CurlWebAccess (1)` below :point_down:
 ![`CurlWebAccess (1)`](<Images/CurlWebAccess (1).PNG>)
 
 See image `CurlWebAccess (2)` below :point_down:
-![`CurlWebAccess (2)`](<Images/CurlWebAccess (2).PNG>)See image `CurlWebAccess (3)` below :point_down:
+![`CurlWebAccess (2)`](<Images/CurlWebAccess (2).PNG>)
+
+See image `CurlWebAccess (3)` below :point_down:
 ![`CurlWebAccess (3)`](<Images/CurlWebAccess (3).PNG>)
 
 
@@ -84,29 +87,39 @@ See image  `UbuntuApache2Default page` below :point_down:
 
 ## Installing MySQL
 MySQL is a popular database management system used within PHP environments
-- ***$ sudo apt install mysql-server***: This command was used to install the software. See images `InstallMySQLserver (1)` `InstallMySQLserver (2)` `InstallMySQLserver (3)` `InstallMySQLserver (4)` and `InstallMySQLserver (5)` below :point_down:
+- ***$ sudo apt install mysql-server***: This command was used to install the software.
 
+See image `InstallMySQLserver (1)` below :point_down:
 ![`InstallMySQLserver (1)`](<Images/InstallMySQLserver (1).PNG>)
+
+See image `InstallMySQLserver (2)` below :point_down:
 ![`InstallMySQLserver (2)`](<Images/InstallMySQLserver (2).PNG>)
+
+See image `InstallMySQLserver (3)` below :point_down:
 ![`InstallMySQLserver (3)`](<Images/InstallMySQLserver (3).PNG>)
+
+See image `InstallMySQLserver (4)` below :point_down:
 ![`InstallMySQLserver (4)`](<Images/InstallMySQLserver (4).PNG>)
+
+See image `InstallMySQLserver (5)` below :point_down:
 ![`InstallMySQLserver (5)`](<Images/InstallMySQLserver (5).PNG>)
 
 
 - `ConnectingSQLnativePasswordAndExit`(***$ sudo mysql***) : When the above is done installing this command was used to log in to the MySQL console. This will connect to the MySQL server as the administrative database user root, which is inferred by the use of sudo when running this command. it's recommended that you run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings and lock down access to your database system. Before running the script you will set a password for the root user, using ***mysql_native_password*** as default authentication method. This command was used for it ***mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';***. ***mysql> exit*** can be used to exit MySQL shell.
 
+See image `ConnectingSQLnativePasswordAndExit` below :point_down:
+![`ConnectingSQLnativePasswordAndExit`](Images/ConnectngSQLnativePasswordAndExit.PNG)
+
+
 - `MySQLSecureInstallationWithPASSWORDchange` (***$ sudo mysql_secure_installation***) : This command can be used to start the interactive script. This will ask if you want to configure the ***VALIDATE PASSWORD PLUGGIN***, please note that if you leave validation disabled and you run ***sudo mysql*** and input the native password you used, you may get an error feedback like ***ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using passowrd: password)*** so its advisable you enable ***VALIDATE PASSWORD PLUGIN*** and enter 2 for strongest level as you will receive errors when attempting to set any password which does not contain a mix of uppercase, lowercase, special characters and number or which is based on common dictionary words e.g PassWord.1 will not be rejected by MySQL with an error and also answer Y for yes for the rest of the questions and hit enter. When you set up the ***VALIDATE PASSWORD PLUGIN***, your server will ask you to select and confirm a password for the MySQL root user. The database root user is an administrative user with full privileges over the database system.
+
+See image `MySQLSecureInstallationWithPASSWORDchange` below :point_down:
+![`MySQLSecureInstallationWithPASSWORDchange`](Images/MySQLSecureInstallationWithPASSWORDchange.PNG)
 
 - `MySQLtestLoginwithChangedPassword`(***$ sudo mysql -p***) : This command was used to test if one is able to log into the MySQL console, -p flag in this command will prompt you for the password used after changing the root user password and to exit the MySQL console for this you will use the password you created in the above step, type ***mysql> exit***
 
-
-
-
-![`ConnectingSQLnativePasswordAndExit`](Images/ConnectngSQLnativePasswordAndExit.PNG)
-
-![`MySQLSecureInstallationWithPASSWORDchange`](Images/MySQLSecureInstallationWithPASSWORDchange.PNG)
-
-![`MySQLtestLoginwithChangedPassword`](Images/MySQLtestLoginwithChangedPassword.PNG)
+See image `ConnectingSQLnativePasswordAndExit` below :point_down:
+![`ConnectingSQLnativePasswordAndExit`](Images/MySQLtestLoginwithChangedPassword.PNG)
 
 
 
@@ -115,12 +128,18 @@ PHP is the component of our setup that will process code to display dynamic cont
 
 - ***$ sudo apt install php libapache2-mod-php php-mysql*** : This command was used to enable apache to handle PHP files. Core PHP packages will automatically be installed as dependencies.
 
+See image `InstallPHPandDependencies (1)` below :point_down:
+![`InstallPHPandDependencies (1)`](<Images/InstallPHPandDependencies (1).PNG>)
+
+See image `InstallPHPandDependencies (2)` below :point_down:
+![`InstallPHPandDependencies (2)`](<Images/InstallPHPandDependencies (2).PNG>)
+
+See image `InstallPHPandDependencies (3)` below :point_down:
+![`InstallPHPandDependencies (3)`](<Images/InstallPHPandDependencies (3).PNG>)
 
 - ***php -v*** : This command was used to confirm the PHP version that was installed
 
-![`InstallPHPandDependencies (1)`](<Images/InstallPHPandDependencies (1).PNG>)
-![`InstallPHPandDependencies (2)`](<Images/InstallPHPandDependencies (2).PNG>)
-![`InstallPHPandDependencies (3)`](<Images/InstallPHPandDependencies (3).PNG>)
+See image `php-v`below :point_down:
 ![`php-v`](Images/php-v.PNG)
 
 
