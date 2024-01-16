@@ -8,7 +8,7 @@
 
 ## EC2 running on AWS
 - `EC2Running` : This image shows the Lamp instance already up and running (P.S the ip address was covered for security reasons).
-    - see image below :point_down:![`EC2Running`](Images/EC2Running.PNG)
+    - see image `EC2Running` below :point_down:![`EC2Running`](Images/EC2Running.PNG)
 
 
 ## Using PEM key to connect to EC2 instance via windows powershell
