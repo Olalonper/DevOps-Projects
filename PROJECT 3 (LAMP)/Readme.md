@@ -14,15 +14,12 @@
 ## Using PEM key to connect to EC2 instance via windows powershell
 For this to be connected successfully the below commands needs to run;
 - ***cd download*** : This command was used to move into the into the downloads folder as this is folder the PEM key was stored in.
-    - See image `cd downloads` below :point_down:![`cd downloads`](<Images/cd downloads.PNG>)
+    - see image `cd downloads` below :point_down:![`cd downloads`](<Images/cd downloads.PNG>)
 
-
-- ***ssh -i lamp&lemp.pem ubuntu@x4.xx3.1xx.xx0*** : This command was used to connect the PEM key to the EC2 instance using the windows powershell. although the initial command didnt work as i had to wrap  the ampersand(&) in double quotation marks ("&") so i used this command (***ssh -i lamp"&"lemp.pem ubuntu@4.xx3.1xx.xx0***). 
-
-See image `InstanceConnection (1)` below :point_down:
+- ***ssh -i lamp&lemp.pem ubuntu@x4.xx3.1xx.xx0*** : This command was used to connect the PEM key to the EC2 instance using the windows powershell. although the initial command didnt work as i had to wrap  the ampersand(&) in double quotation marks ("&") so i used this command (***ssh -i lamp"&"lemp.pem ubuntu@4.xx3.1xx.xx0***).
+    - see image `InstanceConnection (1)` below :point_down:
 ![`InstanceConnection (1)`](<Images/InstanceConnection (1).PNG>)
-
-See image `InstanceConnection (2)` below :point_down:
+    - see image `InstanceConnection (2)` below :point_down:
 ![`InstanceConnection (2)`](<Images/InstanceConnection (2).PNG>)
 
 
@@ -30,53 +27,30 @@ See image `InstanceConnection (2)` below :point_down:
 ## Installing Apache and Updating the Firewall
 Apache is an open source software available for free. it runs on 67% of all webserves in the world. It is fast, reliable, and secure. it can be highly customized to meet the needs of many diiferent environments by using extensions and modules. Most WordPress hosting providers use Apache as their web server software, websites and other applications can run on other web server software as well as Nginx, Microsoft IIS, etc. After we have the EC2 instance running and PEM conect to the windows powershell, we will now proceed by installing Apache and Updating the firewall by running following commands below.
 
-- ***$ sudo apt update*** : This command was used to update a list of packages. 
+- ***$ sudo apt update*** : This command was used to update a list of packages.
+    - see image `SudoAptUpdate (1)` below :point_down:![`SudoAptUpdate (1)`](<Images/SudoAptUpdate (1).PNG>)
+    - see image `SudoAptUpdate (2)` below :point_down:![`SudoAptUpdate (2)`](<Images/SudoAptUpdate (2).PNG>)
+    - see image `SudoAptUpdate (3)` below :point_down:![`SudoAptUpdate (3)`](<Images/SudoAptUpdate (3).PNG>)
 
-See image `SudoAptUpdate (1)` below :point_down:
-![`SudoAptUpdate (1)`](<Images/SudoAptUpdate (1).PNG>)
-
-See image `SudoAptUpdate (2)` below :point_down:
-![`SudoAptUpdate (2)`](<Images/SudoAptUpdate (2).PNG>)
-
-See image `SudoAptUpdate (3)` below :point_down:
-![`SudoAptUpdate (3)`](<Images/SudoAptUpdate (3).PNG>)
-
-
-
-- ***$ sudo apt install apache2 -y*** : This command was used to run apache2 package installation. 
-
-See image `SudoAptInstallApache2 (1)` below :point_down:
-![`SudoAptInstallApache2 (1)`](<Images/SudoAptInstallApache2 (1).PNG>)
-
-See image `SudoAptInstallApache2 (2)` below :point_down:
-![`SudoAptInstallApache2 (2)`](<Images/SudoAptInstallApache2 (2).PNG>)
-
-See image `SudoAptInstallApache2 (3)` below :point_down:
-![`SudoAptInstallApache2 (3)`](<Images/SudoAptInstallApache2 (3).PNG>)
+- ***$ sudo apt install apache2 -y*** : This command was used to run apache2 package installation.
+    - see image `SudoAptInstallApache2 (1)` below :point_down:![`SudoAptInstallApache2 (1)`](<Images/SudoAptInstallApache2 (1).PNG>)
+    - see image `SudoAptInstallApache2 (2)` below :point_down:![`SudoAptInstallApache2 (2)`](<Images/SudoAptInstallApache2 (2).PNG>)
+    - see image `SudoAptInstallApache2 (3)` below :point_down:![`SudoAptInstallApache2 (3)`](<Images/SudoAptInstallApache2 (3).PNG>)
 
 
 
 - ***$ sudo systemctl status apache2*** : This command was used to verify that Apache is running using. If it is green and running that means that the apache was installed correctly.
-
-See image `SudoSystemctlStatusApache2` below :point_down:
-![`SudoSystemctlStatusApache2`](Images/SudoSystemctlStatusApache2.PNG)
-
-
-
-- ***$ curl http://localhost:80*** : This command was used to request the apache HTTP Server on port 80 using the DNS name eithier this can be pasted on your web browser to enable it display the Ubuntu Apache2 default page. 
- - See image `CurlWebAccess (1)` below :point_down:
- ![`CurlWebAccess (1)`](<Images/CurlWebAccess (1).PNG>)
-
- - See image `CurlWebAccess (2)` below :point_down:
- ![`CurlWebAccess (2)`](<Images/CurlWebAccess (2).PNG>)
-
- - See image `CurlWebAccess (3)` below :point_down:
- ![`CurlWebAccess (3)`](<Images/CurlWebAccess (3).PNG>)
+    - see image `SudoSystemctlStatusApache2` below :point_down:![`SudoSystemctlStatusApache2`](Images/SudoSystemctlStatusApache2.PNG)
+    
+    
+- ***$ curl http://localhost:80*** : This command was used to request the apache HTTP Server on port 80 using the DNS name eithier this can be pasted on your web browser to enable it display the Ubuntu Apache2 default page.
+    - see image `CurlWebAccess (1)` below :point_down:![`CurlWebAccess (1)`](<Images/CurlWebAccess (1).PNG>)
+    - see image `CurlWebAccess (2)` below :point_down:![`CurlWebAccess (2)`](<Images/CurlWebAccess (2).PNG>)
+    - see image `CurlWebAccess (3)` below :point_down:![`CurlWebAccess (3)`](<Images/CurlWebAccess (3).PNG>)
 
 
-OR you can copy the IP address and paste it on your browser to confim that Apache2 works correctly. either you do the above or below you shpuld get the below in your web browser. 
-See image  `UbuntuApache2Default page` below :point_down:
-![`UbuntuApache2Default page`](<Images/UbuntuApache2Default page.PNG>)
+- OR you can copy the IP address and paste it on your browser to confim that Apache2 works correctly. either you do the above or below you shpuld get the below in your web browser.
+    - see image  `UbuntuApache2Default page` below :point_down:![`UbuntuApache2Default page`](<Images/UbuntuApache2Default page.PNG>)
 
 
 
