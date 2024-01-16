@@ -15,10 +15,18 @@ see image below :point_down:
 
 ## Using PEM key to connect to EC2 instance via windows powershell
 For this to be connected successfully the below commands needs to run;
-- `InstanceConnection (1)` and `InstanceConnection (2)`(***cd download***) : This command was used to move into the into the downloads folder as this is folder the PEM key was stored in.
-- `InstanceConnection (1)` and `InstanceConnection (2)` (***ssh -i lamp&lemp.pem ubuntu@x4.xx3.1xx.xx0***) : This command was used to connect the PEM key to the EC2 instance using the windows powershell. although the initial command didnt work as i had to wrap  the ampersand(&) in double quotation marks ("&") so i used this command (***ssh -i lamp"&"lemp.pem ubuntu@4.xx3.1xx.xx0***). See images below :point_down:
+- ***cd download*** : This command was used to move into the into the downloads folder as this is folder the PEM key was stored in.
 
+See image `cd downloads` below :point_down:
+![`cd downloads`](<Images/cd downloads.PNG>)
+
+
+- ***ssh -i lamp&lemp.pem ubuntu@x4.xx3.1xx.xx0*** : This command was used to connect the PEM key to the EC2 instance using the windows powershell. although the initial command didnt work as i had to wrap  the ampersand(&) in double quotation marks ("&") so i used this command (***ssh -i lamp"&"lemp.pem ubuntu@4.xx3.1xx.xx0***). 
+
+See image `InstanceConnection (1)` below :point_down:
 ![`InstanceConnection (1)`](<Images/InstanceConnection (1).PNG>)
+
+See image `InstanceConnection (2)` below :point_down:
 ![`InstanceConnection (2)`](<Images/InstanceConnection (2).PNG>)
 
 
@@ -26,32 +34,48 @@ For this to be connected successfully the below commands needs to run;
 ## Installing Apache and Updating the Firewall
 Apache is an open source software available for free. it runs on 67% of all webserves in the world. It is fast, reliable, and secure. it can be highly customized to meet the needs of many diiferent environments by using extensions and modules. Most WordPress hosting providers use Apache as their web server software, websites and other applications can run on other web server software as well as Nginx, Microsoft IIS, etc. After we have the EC2 instance running and PEM conect to the windows powershell, we will now proceed by installing Apache and Updating the firewall by running following commands below.
 
-- ***$ sudo apt update*** : This command was used to update a list of packages. See images `SudoAptUpdate (1)` `SudoAptUpdate (2)` and `SudoAptUpdate (3)` below :point_down:
+- ***$ sudo apt update*** : This command was used to update a list of packages. 
 
+See image `SudoAptUpdate (1)` below :point_down:
 ![`SudoAptUpdate (1)`](<Images/SudoAptUpdate (1).PNG>)
+
+See image `SudoAptUpdate (2)` below :point_down:
 ![`SudoAptUpdate (2)`](<Images/SudoAptUpdate (2).PNG>)
+
+See image `SudoAptUpdate (3)` below :point_down:
 ![`SudoAptUpdate (3)`](<Images/SudoAptUpdate (3).PNG>)
 
 
 
-- ***$ sudo apt install apache2 -y*** : This command was used to run apache2 package installation. See images `SudoAptInstallApache2 (1)` `SudoAptInstallApache2 (2)` and `SudoAptInstallApache2 (3)` below :point_down:
+- ***$ sudo apt install apache2 -y*** : This command was used to run apache2 package installation. 
 
+See image `SudoAptInstallApache2 (1)` below :point_down:
 ![`SudoAptInstallApache2 (1)`](<Images/SudoAptInstallApache2 (1).PNG>)
+
+See image `SudoAptInstallApache2 (2)` below :point_down:
 ![`SudoAptInstallApache2 (2)`](<Images/SudoAptInstallApache2 (2).PNG>)
+
+See image `SudoAptInstallApache2 (3)` below :point_down:
 ![`SudoAptInstallApache2 (3)`](<Images/SudoAptInstallApache2 (3).PNG>)
 
 
 
-- ***$ sudo systemctl status apache2*** : This command was used to verify that Apache is running using. If it is green and running that means that the apache was installed correctly. See image `SudoSystemctlStatusApache2` below :point_down:
+- ***$ sudo systemctl status apache2*** : This command was used to verify that Apache is running using. If it is green and running that means that the apache was installed correctly.
 
+See image `SudoSystemctlStatusApache2` below :point_down:
 ![`SudoSystemctlStatusApache2`](Images/SudoSystemctlStatusApache2.PNG)
 
 
 
-- ***$ curl http://localhost:80*** : This command was used to request the apache HTTP Server on port 80 using the DNS name eithier this can be pasted on your web browser to enable it display the Ubuntu Apache2 default page. See images`CurlWebAccess (1)` `CurlWebAccess (2)` and `CurlWebAccess (3)` below :point_down:
+- ***$ curl http://localhost:80*** : This command was used to request the apache HTTP Server on port 80 using the DNS name eithier this can be pasted on your web browser to enable it display the Ubuntu Apache2 default page. 
 
+See image `CurlWebAccess (1)` below :point_down:
 ![`CurlWebAccess (1)`](<Images/CurlWebAccess (1).PNG>)
+
+See image `CurlWebAccess (2)` below :point_down:
 ![`CurlWebAccess (2)`](<Images/CurlWebAccess (2).PNG>)
+
+See image `CurlWebAccess (3)` below :point_down:
 ![`CurlWebAccess (3)`](<Images/CurlWebAccess (3).PNG>)
 
 
@@ -63,7 +87,14 @@ OR you can copy the IP address and paste it on your browser to confim that Apach
 
 ## Installing MySQL
 MySQL is a popular database management system used within PHP environments
-- `InstallMySQLserver (1)` `InstallMySQLserver (2)` `InstallMySQLserver (3)` `InstallMySQLserver (4)` and `InstallMySQLserver (5)`(***$ sudo apt install mysql-server***) : This command was used to install the software.
+- ***$ sudo apt install mysql-server***: This command was used to install the software. See images `InstallMySQLserver (1)` `InstallMySQLserver (2)` `InstallMySQLserver (3)` `InstallMySQLserver (4)` and `InstallMySQLserver (5)` below :point_down:
+
+![`InstallMySQLserver (1)`](<Images/InstallMySQLserver (1).PNG>)
+![`InstallMySQLserver (2)`](<Images/InstallMySQLserver (2).PNG>)
+![`InstallMySQLserver (3)`](<Images/InstallMySQLserver (3).PNG>)
+![`InstallMySQLserver (4)`](<Images/InstallMySQLserver (4).PNG>)
+![`InstallMySQLserver (5)`](<Images/InstallMySQLserver (5).PNG>)
+
 
 - `ConnectingSQLnativePasswordAndExit`(***$ sudo mysql***) : When the above is done installing this command was used to log in to the MySQL console. This will connect to the MySQL server as the administrative database user root, which is inferred by the use of sudo when running this command. it's recommended that you run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings and lock down access to your database system. Before running the script you will set a password for the root user, using ***mysql_native_password*** as default authentication method. This command was used for it ***mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';***. ***mysql> exit*** can be used to exit MySQL shell.
 
@@ -72,11 +103,7 @@ MySQL is a popular database management system used within PHP environments
 - `MySQLtestLoginwithChangedPassword`(***$ sudo mysql -p***) : This command was used to test if one is able to log into the MySQL console, -p flag in this command will prompt you for the password used after changing the root user password and to exit the MySQL console for this you will use the password you created in the above step, type ***mysql> exit***
 
 
-![`InstallMySQLserver (1)`](<Images/InstallMySQLserver (1).PNG>)
-![`InstallMySQLserver (2)`](<Images/InstallMySQLserver (2).PNG>)
-![`InstallMySQLserver (3)`](<Images/InstallMySQLserver (3).PNG>)
-![`InstallMySQLserver (4)`](<Images/InstallMySQLserver (4).PNG>)
-![`InstallMySQLserver (5)`](<Images/InstallMySQLserver (5).PNG>)
+
 
 ![`ConnectingSQLnativePasswordAndExit`](Images/ConnectngSQLnativePasswordAndExit.PNG)
 
