@@ -78,7 +78,6 @@ See image `CurlWebAccess (3)` below :point_down:
 ![`CurlWebAccess (3)`](<Images/CurlWebAccess (3).PNG>)
 
 
-
 OR you can copy the IP address and paste it on your browser to confim that Apache2 works correctly. either you do the above or below you shpuld get the below in your web browser. 
 See image  `UbuntuApache2Default page` below :point_down:
 ![`UbuntuApache2Default page`](<Images/UbuntuApache2Default page.PNG>)
