@@ -97,7 +97,8 @@ With the default DirectoryIndex settings on Apache, a file named index.html will
 - ***$ sudo systemctl reload apache2*** : This command was used reload Apache so the above changes can take effect.![`sudo reload`](<Images/sudo reload.PNG>)
 
 
-- ***$ nano /var/www/projectlamp/index.php*** : This command was used to create a new file named index.php inside the customer web root folder as a PHP script will be used to test that Php is correctly installed and configured on the server, and also to confirm that Apache is able to handle and process requestd for PHP files. the PHP code is pasted in the nano text editor.!['projectlamp'](Images/projectlamp.PNG)
+- ***$ nano /var/www/projectlamp/index.php*** : This command was used to create a new file named index.php inside the customer web root folder as a PHP script will be used to test that Php is correctly installed and configured on the server, and also to confirm that Apache is able to handle and process requestd for PHP files. the PHP code is pasted in the nano text editor.
+    - !['projectlamp'](Images/projectlamp.PNG)
     - see image `PHPCodeUsedInNanoTextEditorForPHPLandingpage` below :point_down:![`PHPCodeUsedInNanoTextEditorForPHPLandingpage`](Images/PHPCodeUsedInNanoTextEditorForPHPLandingpage.PNG)
 
 
