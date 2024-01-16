@@ -6,14 +6,17 @@
 - Windows Powershell downloaded and connected to  instance by running the PEM key.
 
 
-## Using PEM key to connect to EC2 instance via windows powershell
+## EC2 running on AWS
 `EC2Running` : This image shows the Lamp instance already up and running (P.S the ip address was covered for security reasons).
 see image below :point_down:
+
 ![`EC2Running`](Images/EC2Running.PNG)
 
 
-- `InstanceConnection (1)` and `InstanceConnection (2)`(***cd download***) : This command was used to move into the into the downloads folder
-- `InstanceConnection (1)` and `InstanceConnection (2)` (***ssh -i lamp&lemp.pem ubuntu@x4.xx3.1xx.xx0***) : This command was used to connect the PEM key to the EC2 instance using the windows powershell. although the initial command didnt work as i had to wrap  the ampersand(&) in double quotation marks ("&") so i used this command (***ssh -i lamp"&"lemp.pem ubuntu@4.xx3.1xx.xx0***)
+## Using PEM key to connect to EC2 instance via windows powershell
+For this to be connected successfully the below commands needs to run;
+- `InstanceConnection (1)` and `InstanceConnection (2)`(***cd download***) : This command was used to move into the into the downloads folder as this is folder the PEM key was stored in.
+- `InstanceConnection (1)` and `InstanceConnection (2)` (***ssh -i lamp&lemp.pem ubuntu@x4.xx3.1xx.xx0***) : This command was used to connect the PEM key to the EC2 instance using the windows powershell. although the initial command didnt work as i had to wrap  the ampersand(&) in double quotation marks ("&") so i used this command (***ssh -i lamp"&"lemp.pem ubuntu@4.xx3.1xx.xx0***). See images below :point_down:
 
 ![`InstanceConnection (1)`](<Images/InstanceConnection (1).PNG>)
 ![`InstanceConnection (2)`](<Images/InstanceConnection (2).PNG>)
@@ -21,26 +24,39 @@ see image below :point_down:
 
 
 ## Installing Apache and Updating the Firewall
-Apache is an open source software available for free. it runs on 67% of all webserves in the world. It is fast, reliable, and secure. it can be highly customized to meet the needs of many diiferent environments by using extensions and modules. Most WordPress hosting providers use Apache as their web server software, websites and other applications can run on other web server software as well as Nginx, Microsoft IIS, etc. The following command was used.
+Apache is an open source software available for free. it runs on 67% of all webserves in the world. It is fast, reliable, and secure. it can be highly customized to meet the needs of many diiferent environments by using extensions and modules. Most WordPress hosting providers use Apache as their web server software, websites and other applications can run on other web server software as well as Nginx, Microsoft IIS, etc. After we have the EC2 instance running and PEM conect to the windows powershell, we will now proceed by installing Apache and Updating the firewall by running following commands below.
 
-- `SudoAptUpdate (1)` `SudoAptUpdate (2)` and `SudoAptUpdate (3)` (***$ sudo apt update***) : This command was used to update a list of packages
-- `SudoAptInstallApache2 (1)` `SudoAptInstallApache2 (2)` and `SudoAptInstallApache2 (3)` (***$ sudo apt install apache2 -y***) : This command was used to run apache2 package installation
-- `SudoSystemctlStatusApache2` (***$ sudo systemctl status apache2***) : This command was used to verify that Apache is running using. If it is green and running that means that the apache was installed correctly.
-- `CurlWebAccess (1)` `CurlWebAccess (2)` and `CurlWebAccess (3)`(***$ curl http://localhost:80***) : This command was used to request the apache HTTP Server on port 80 using the DNS name and this can be pasted on your web browser to enable it display the Ubuntu Apache2 default page
+- ***$ sudo apt update*** : This command was used to update a list of packages. See images `SudoAptUpdate (1)` `SudoAptUpdate (2)` and `SudoAptUpdate (3)` below :point_down:
 
 ![`SudoAptUpdate (1)`](<Images/SudoAptUpdate (1).PNG>)
 ![`SudoAptUpdate (2)`](<Images/SudoAptUpdate (2).PNG>)
 ![`SudoAptUpdate (3)`](<Images/SudoAptUpdate (3).PNG>)
 
+
+
+- ***$ sudo apt install apache2 -y*** : This command was used to run apache2 package installation. See images `SudoAptInstallApache2 (1)` `SudoAptInstallApache2 (2)` and `SudoAptInstallApache2 (3)` below :point_down:
+
 ![`SudoAptInstallApache2 (1)`](<Images/SudoAptInstallApache2 (1).PNG>)
 ![`SudoAptInstallApache2 (2)`](<Images/SudoAptInstallApache2 (2).PNG>)
 ![`SudoAptInstallApache2 (3)`](<Images/SudoAptInstallApache2 (3).PNG>)
 
+
+
+- ***$ sudo systemctl status apache2*** : This command was used to verify that Apache is running using. If it is green and running that means that the apache was installed correctly. See image `SudoSystemctlStatusApache2` below :point_down:
+
 ![`SudoSystemctlStatusApache2`](Images/SudoSystemctlStatusApache2.PNG)
+
+
+
+- ***$ curl http://localhost:80*** : This command was used to request the apache HTTP Server on port 80 using the DNS name eithier this can be pasted on your web browser to enable it display the Ubuntu Apache2 default page. See images`CurlWebAccess (1)` `CurlWebAccess (2)` and `CurlWebAccess (3)` below :point_down:
 
 ![`CurlWebAccess (1)`](<Images/CurlWebAccess (1).PNG>)
 ![`CurlWebAccess (2)`](<Images/CurlWebAccess (2).PNG>)
 ![`CurlWebAccess (3)`](<Images/CurlWebAccess (3).PNG>)
+
+
+
+OR you can copy the IP address and paste it on your browser to confim that Apache2 works correctly. either you do the above or below you shpuld get the below in your web browser. See image  `UbuntuApache2Default page` below :point_down:
 ![`UbuntuApache2Default page`](<Images/UbuntuApache2Default page.PNG>)
 
 
