@@ -16,7 +16,6 @@ see image below :point_down:
 ## Using PEM key to connect to EC2 instance via windows powershell
 For this to be connected successfully the below commands needs to run;
 - ***cd download*** : This command was used to move into the into the downloads folder as this is folder the PEM key was stored in.
-
 See image `cd downloads` below :point_down:
 ![`cd downloads`](<Images/cd downloads.PNG>)
 
