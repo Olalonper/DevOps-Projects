@@ -76,7 +76,7 @@ See image `CurlWebAccess (2)` below :point_down:
 ![`CurlWebAccess (2)`](<Images/CurlWebAccess (2).PNG>)
 
 See image `CurlWebAccess (3)` below :point_down:
-![`CurlWebAccess (3)`](<Images/CurlWebAccess (3).PNG>)
+ ![`CurlWebAccess (3)`](<Images/CurlWebAccess (3).PNG>)
 
 
 OR you can copy the IP address and paste it on your browser to confim that Apache2 works correctly. either you do the above or below you shpuld get the below in your web browser. 
@@ -154,8 +154,9 @@ See image `ChangePHPhomepage` below :point_down:
 ![`ChangePHPhomepage`](Images/ChangePHPhomepage.PNG)
 
 
-- ***$ sudo systemctl reload apache2*** : This command was used reload Apache so the above changes can take effect. See image `sudo reload` below :point_down:
-![`sudo reload`](<Images/sudo reload.PNG>)
+- ***$ sudo systemctl reload apache2*** : This command was used reload Apache so the above changes can take effect. 
+See image `sudo reload` below :point_down:
+ ![`sudo reload`](<Images/sudo reload.PNG>)
 
 
 - `projectlamp` ***$ nano /var/www/projectlamp/index.php*** : This command was used to create a new file named index.php inside the customer web root folder as a PHP script will be used to test that Php is correctly installed and configured on the server, and also to confirm that Apache is able to handle and process requestd for PHP files. the PHP code is pasted in the nano text editor. See image `projectlamp` below :point_down:
@@ -212,7 +213,7 @@ See image `PHPlampProjectConfig (1)` below :point_down:
 ***$ sudo systemctl reload apache2*** : This command was used to reload Apache so the changes take effect.
 
 See image `sudoreload` below :point_down:
-![`sudoreload`](Images/sudoreload.PNG)
+ ![`sudoreload`](Images/sudoreload.PNG)
 
 
 After the above has been done correctly, from the prior Ubuntu Apache2 Ubuntu default page refresh and you will see the PHP landing page.
