@@ -7,17 +7,14 @@
 
 
 ## EC2 running on AWS
-`EC2Running` : This image shows the Lamp instance already up and running (P.S the ip address was covered for security reasons).
-see image below :point_down:
-
-![`EC2Running`](Images/EC2Running.PNG)
+- `EC2Running` : This image shows the Lamp instance already up and running (P.S the ip address was covered for security reasons).
+    - see image below :point_down:![`EC2Running`](Images/EC2Running.PNG)
 
 
 ## Using PEM key to connect to EC2 instance via windows powershell
 For this to be connected successfully the below commands needs to run;
 - ***cd download*** : This command was used to move into the into the downloads folder as this is folder the PEM key was stored in.
-See image `cd downloads` below :point_down:
-![`cd downloads`](<Images/cd downloads.PNG>)
+    - See image `cd downloads` below :point_down:![`cd downloads`](<Images/cd downloads.PNG>)
 
 
 - ***ssh -i lamp&lemp.pem ubuntu@x4.xx3.1xx.xx0*** : This command was used to connect the PEM key to the EC2 instance using the windows powershell. although the initial command didnt work as i had to wrap  the ampersand(&) in double quotation marks ("&") so i used this command (***ssh -i lamp"&"lemp.pem ubuntu@4.xx3.1xx.xx0***). 
