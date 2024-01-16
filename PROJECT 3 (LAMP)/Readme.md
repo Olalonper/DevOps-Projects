@@ -112,26 +112,15 @@ With the default DirectoryIndex settings on Apache, a file named index.html will
 - ***$ sudo chown -R $USER:$USER /var/www/projectlamp*** : This command was used to assign ownership of the directory with the ***$USER*** environment variab, which will reference the current system user.
     - see image `AssignedOwnershipWithThe$USER` below :point_down:![`AssignedOwnershipWithThe$USER`](Images/AssignedOwnershipWithThe$USER.PNG)
 
-- ***$ sudo vi /etc/apache2/sites-available/projectlamp.conf*** : This command was used create and open a new configuration in Apache's ***sites-available*** directory using any preferred command-line editor in this case vi was used. The virtual host code was pasted in blank vi text editor.
+- `PHPlampProjectConfig (1)` `PHPlampProjectConfig (1)`***$ sudo vi /etc/apache2/sites-available/projectlamp.conf*** : This command was used create and open a new configuration in Apache's ***sites-available*** directory using any preferred command-line editor in this case vi was used. The virtual host code was pasted in blank vi text editor.
+- `PHPlampProjectConfig (1)` `PHPlampProjectConfig (1)`***$ sudo ls /etc/apache2/sites-available*** : This command was used to show the new file in the ***sites-available*** directory You will see something like this 000-default.conf  default-ssl.conf  projectlamp.conf
+- `PHPlampProjectConfig (1)` `PHPlampProjectConfig (1)`***$ sudo a2ensite projectlamp*** : This command was used to enable the new virtual host.
+- `PHPlampProjectConfig (1)` `PHPlampProjectConfig (1)`***$ sudo a2dissite 000-default*** : This command was used to disable the defaukt website that comes installed with Apache. This is required if you're not using a custom domain name, because in this case Apache's default configuration would overwrite the virtual host.
+- `PHPlampProjectConfig (1)` `PHPlampProjectConfig (1)`***$ sudo apache2ctl configtest*** : This command was used to make sure the configuration file doesnt contain syntax errors.
+- `PHPlampProjectConfig (1)` `PHPlampProjectConfig (1)`***$ sudo systemctl reload apache2*** : This command was used to reload Apache so the changes take effect.
     - see image `PHPlampProjectConfig (1)` below :point_down:![`PHPlampProjectConfig (1)`](<Images/PHPlampProjectConfig (1).PNG>)
-    - see image `PHPlampProjectConfig 2` below :point_down:![`PHPlampProjectConfig 2`](<Images/PHPlampProjectConfig 2.PNG>)
+    - see image `PHPlampProjectConfig (1)` below :point_down:![`PHPlampProjectConfig 2`](<Images/PHPlampProjectConfig 2.PNG>)
 
-- ***$ sudo ls /etc/apache2/sites-available*** : This command was used to show the new file in the ***sites-available*** directory You will see something like this 000-default.conf  default-ssl.conf  projectlamp.conf
-    - see image `PHPlampProjectConfig (1)` below :point_down:![`PHPlampProjectConfig (1)`](<Images/PHPlampProjectConfig (1).PNG>)
-
-- ***$ sudo a2ensite projectlamp*** : This command was used to enable the new virtual host.
-    - see image `PHPlampProjectConfig (1)` below :point_down:
- ![`PHPlampProjectConfig (1)`](<Images/PHPlampProjectConfig (1).PNG>)
-
-
-- ***$ sudo a2dissite 000-default*** : This command was used to disable the defaukt website that comes installed with Apache. This is required if you're not using a custom domain name, because in this case Apache's default configuration would overwrite the virtual host.
-    - see image `PHPlampProjectConfig (1)` below :point_down:![`PHPlampProjectConfig (1)`](<Images/PHPlampProjectConfig (1).PNG>)
-
-- ***$ sudo apache2ctl configtest*** : This command was used to make sure the configuration file doesnt contain syntax errors.
-    - see image `PHPlampProjectConfig (1)` below :point_down:![`PHPlampProjectConfig (1)`](<Images/PHPlampProjectConfig (1).PNG>)
-
-- ***$ sudo systemctl reload apache2*** : This command was used to reload Apache so the changes take effect.
-    - ![`sudoreload`](Images/sudoreload.PNG)
 
 
 - After the above has been done correctly, from the prior Ubuntu Apache2 Ubuntu default page refresh and you will see the PHP landing page.
