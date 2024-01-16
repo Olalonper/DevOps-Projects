@@ -74,6 +74,7 @@ See image `CurlWebAccess (1)` below :point_down:
 See image `CurlWebAccess (2)` below :point_down:
 ![`CurlWebAccess (2)`](<Images/CurlWebAccess (2).PNG>)
 
+
 See image `CurlWebAccess (3)` below :point_down:
 ![`CurlWebAccess (3)`](<Images/CurlWebAccess (3).PNG>)
 
