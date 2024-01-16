@@ -67,15 +67,13 @@ See image `SudoSystemctlStatusApache2` below :point_down:
 
 
 - ***$ curl http://localhost:80*** : This command was used to request the apache HTTP Server on port 80 using the DNS name eithier this can be pasted on your web browser to enable it display the Ubuntu Apache2 default page. 
+ - See image `CurlWebAccess (1)` below :point_down:
+ ![`CurlWebAccess (1)`](<Images/CurlWebAccess (1).PNG>)
 
+ - See image `CurlWebAccess (2)` below :point_down:
+ ![`CurlWebAccess (2)`](<Images/CurlWebAccess (2).PNG>)
 
-See image `CurlWebAccess (1)` below :point_down:
-![`CurlWebAccess (1)`](<Images/CurlWebAccess (1).PNG>)
-
-See image `CurlWebAccess (2)` below :point_down:
-![`CurlWebAccess (2)`](<Images/CurlWebAccess (2).PNG>)
-
-See image `CurlWebAccess (3)` below :point_down:
+ - See image `CurlWebAccess (3)` below :point_down:
  ![`CurlWebAccess (3)`](<Images/CurlWebAccess (3).PNG>)
 
 
