@@ -105,21 +105,21 @@ See image `InstallMySQLserver (5)` below :point_down:
 ![`InstallMySQLserver (5)`](<Images/InstallMySQLserver (5).PNG>)
 
 
-- `ConnectingSQLnativePasswordAndExit`(***$ sudo mysql***) : When the above is done installing this command was used to log in to the MySQL console. This will connect to the MySQL server as the administrative database user root, which is inferred by the use of sudo when running this command. it's recommended that you run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings and lock down access to your database system. Before running the script you will set a password for the root user, using ***mysql_native_password*** as default authentication method. This command was used for it ***mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';***. ***mysql> exit*** can be used to exit MySQL shell.
+- ***$ sudo mysql*** : When the above is done installing this command was used to log in to the MySQL console. This will connect to the MySQL server as the administrative database user root, which is inferred by the use of sudo when running this command. it's recommended that you run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings and lock down access to your database system. Before running the script you will set a password for the root user, using ***mysql_native_password*** as default authentication method. This command was used for it ***mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';***. ***mysql> exit*** can be used to exit MySQL shell.
 
 See image `ConnectingSQLnativePasswordAndExit` below :point_down:
 ![`ConnectingSQLnativePasswordAndExit`](Images/ConnectngSQLnativePasswordAndExit.PNG)
 
 
-- `MySQLSecureInstallationWithPASSWORDchange` (***$ sudo mysql_secure_installation***) : This command can be used to start the interactive script. This will ask if you want to configure the ***VALIDATE PASSWORD PLUGGIN***, please note that if you leave validation disabled and you run ***sudo mysql*** and input the native password you used, you may get an error feedback like ***ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using passowrd: password)*** so its advisable you enable ***VALIDATE PASSWORD PLUGIN*** and enter 2 for strongest level as you will receive errors when attempting to set any password which does not contain a mix of uppercase, lowercase, special characters and number or which is based on common dictionary words e.g PassWord.1 will not be rejected by MySQL with an error and also answer Y for yes for the rest of the questions and hit enter. When you set up the ***VALIDATE PASSWORD PLUGIN***, your server will ask you to select and confirm a password for the MySQL root user. The database root user is an administrative user with full privileges over the database system.
+- ***$ sudo mysql_secure_installation*** : This command can be used to start the interactive script. This will ask if you want to configure the ***VALIDATE PASSWORD PLUGGIN***, please note that if you leave validation disabled and you run ***sudo mysql*** and input the native password you used, you may get an error feedback like ***ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using passowrd: password)*** so its advisable you enable ***VALIDATE PASSWORD PLUGIN*** and enter 2 for strongest level as you will receive errors when attempting to set any password which does not contain a mix of uppercase, lowercase, special characters and number or which is based on common dictionary words e.g PassWord.1 will not be rejected by MySQL with an error and also answer Y for yes for the rest of the questions and hit enter. When you set up the ***VALIDATE PASSWORD PLUGIN***, your server will ask you to select and confirm a password for the MySQL root user. The database root user is an administrative user with full privileges over the database system.
 
 See image `MySQLSecureInstallationWithPASSWORDchange` below :point_down:
 ![`MySQLSecureInstallationWithPASSWORDchange`](Images/MySQLSecureInstallationWithPASSWORDchange.PNG)
 
-- `MySQLtestLoginwithChangedPassword`(***$ sudo mysql -p***) : This command was used to test if one is able to log into the MySQL console, -p flag in this command will prompt you for the password used after changing the root user password and to exit the MySQL console for this you will use the password you created in the above step, type ***mysql> exit***
+- ***$ sudo mysql -p*** : This command was used to test if one is able to log into the MySQL console, -p flag in this command will prompt you for the password used after changing the root user password and to exit the MySQL console for this you will use the password you created in the above step, type ***mysql> exit***
 
-See image `ConnectingSQLnativePasswordAndExit` below :point_down:
-![`ConnectingSQLnativePasswordAndExit`](Images/MySQLtestLoginwithChangedPassword.PNG)
+See image `MySQLtestLoginwithChangedPassword` below :point_down:
+![`MySQLtestLoginwithChangedPassword`](Images/MySQLtestLoginwithChangedPassword.PNG)
 
 
 
@@ -139,7 +139,7 @@ See image `InstallPHPandDependencies (3)` below :point_down:
 
 - ***php -v*** : This command was used to confirm the PHP version that was installed
 
-See image `php-v`below :point_down:
+See image `php-v` below :point_down:
 ![`php-v`](Images/php-v.PNG)
 
 
@@ -148,15 +148,27 @@ With the default DirectoryIndex settings on Apache, a file named index.html will
 
 - ***sudo vim /etc/apache2/mods-enabled/dir.conf*** : This command was used to edit the vim text editor and change the order in which the index.php file is listed within the DirectoryIndex directive, using the code in the nano text editior.
 
+See image `SudovimetcApache2modsenableddir.conf` below :point_down:
+![`SudovimetcApache2modsenableddir.conf`](Images/SudovimetcApache2modsenableddir.conf.PNG)
+
+
+See image `ChangePHPhomepage` below :point_down:
+![`ChangePHPhomepage`](Images/ChangePHPhomepage.PNG)
+
 
 - ***$ sudo systemctl reload apache2*** : This command was used reload Apache so the above changes can take effect.
 
-- `projectlamp` (***$ nano /var/www/projectlamp/index.php***) : This command was used to create a new file named index.php inside the customer web root folder as a PHP script will be used to test that Php is correctly installed and configured on the server, and also to confirm that Apache is able to handle and process requestd for PHP files. the PHP code is pasted in the nano text editor.
-
-![`SudovimetcApache2modsenableddir.conf`](Images/SudovimetcApache2modsenableddir.conf.PNG)
-![`ChangePHPhomepage`](Images/ChangePHPhomepage.PNG)
+See image `sudo reload` below :point_down:
 ![`sudo reload`](<Images/sudo reload.PNG>)
+
+
+- `projectlamp` ***$ nano /var/www/projectlamp/index.php*** : This command was used to create a new file named index.php inside the customer web root folder as a PHP script will be used to test that Php is correctly installed and configured on the server, and also to confirm that Apache is able to handle and process requestd for PHP files. the PHP code is pasted in the nano text editor.
+
+See image `projectlamp` below :point_down:
 !['projectlamp'](Images/projectlamp.PNG)
+
+
+See image `PHPCodeUsedInNanoTextEditorForPHPLandingpage` below :point_down:
 ![`PHPCodeUsedInNanoTextEditorForPHPLandingpage`](Images/PHPCodeUsedInNanoTextEditorForPHPLandingpage.PNG)
 
 
