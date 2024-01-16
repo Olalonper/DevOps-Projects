@@ -48,7 +48,6 @@ Apache is an open source software available for free. it runs on 67% of all webs
     - see image `CurlWebAccess (2)` below :point_down:![`CurlWebAccess (2)`](<Images/CurlWebAccess (2).PNG>)
     - see image `CurlWebAccess (3)` below :point_down:![`CurlWebAccess (3)`](<Images/CurlWebAccess (3).PNG>)
 
-
 - OR you can copy the IP address and paste it on your browser to confim that Apache2 works correctly. either you do the above or below you shpuld get the below in your web browser.
     - see image  `UbuntuApache2Default page` below :point_down:![`UbuntuApache2Default page`](<Images/UbuntuApache2Default page.PNG>)
 
