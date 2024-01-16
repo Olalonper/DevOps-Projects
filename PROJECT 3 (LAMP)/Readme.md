@@ -44,9 +44,9 @@ Apache is an open source software available for free. it runs on 67% of all webs
     
     
 - ***$ curl http://localhost:80*** : This command was used to request the apache HTTP Server on port 80 using the DNS name eithier this can be pasted on your web browser to enable it display the Ubuntu Apache2 default page.
-![`CurlWebAccess (1)`](<Images/CurlWebAccess (1).PNG>)
-![`CurlWebAccess (2)`](<Images/CurlWebAccess (2).PNG>)
-![`CurlWebAccess (3)`](<Images/CurlWebAccess (3).PNG>)
+    - ![`CurlWebAccess (1)`](<Images/CurlWebAccess (1).PNG>)
+    - ![`CurlWebAccess (2)`](<Images/CurlWebAccess (2).PNG>)
+    - ![`CurlWebAccess (3)`](<Images/CurlWebAccess (3).PNG>)
 
 - OR you can copy the IP address and paste it on your browser to confim that Apache2 works correctly. either you do the above or below you shpuld get the below in your web browser.
     - see image  `UbuntuApache2Default page` below :point_down:![`UbuntuApache2Default page`](<Images/UbuntuApache2Default page.PNG>)
@@ -83,7 +83,8 @@ PHP is the component of our setup that will process code to display dynamic cont
     - see image `InstallPHPandDependencies (2)` below :point_down:![`InstallPHPandDependencies (2)`](<Images/InstallPHPandDependencies (2).PNG>)
     - see image `InstallPHPandDependencies (3)` below :point_down:![`InstallPHPandDependencies (3)`](<Images/InstallPHPandDependencies (3).PNG>)
 
-- ***php -v*** : This command was used to confirm the PHP version that was installed.![`php-v`](Images/php-v.PNG)
+- ***php -v*** : This command was used to confirm the PHP version that was installed.
+    - ![`php-v`](Images/php-v.PNG)
 
 
 ## Enabling PHP on the website
@@ -129,7 +130,8 @@ With the default DirectoryIndex settings on Apache, a file named index.html will
 - ***$ sudo apache2ctl configtest*** : This command was used to make sure the configuration file doesnt contain syntax errors.
     - see image `PHPlampProjectConfig (1)` below :point_down:![`PHPlampProjectConfig (1)`](<Images/PHPlampProjectConfig (1).PNG>)
 
-- ***$ sudo systemctl reload apache2*** : This command was used to reload Apache so the changes take effect.![`sudoreload`](Images/sudoreload.PNG)
+- ***$ sudo systemctl reload apache2*** : This command was used to reload Apache so the changes take effect.
+    - ![`sudoreload`](Images/sudoreload.PNG)
 
 
 - After the above has been done correctly, from the prior Ubuntu Apache2 Ubuntu default page refresh and you will see the PHP landing page.
