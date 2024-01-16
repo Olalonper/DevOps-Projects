@@ -94,13 +94,11 @@ With the default DirectoryIndex settings on Apache, a file named index.html will
     - see image `ChangePHPhomepage` below :point_down:![`ChangePHPhomepage`](Images/ChangePHPhomepage.PNG)
 
 
-- ***$ sudo systemctl reload apache2*** : This command was used reload Apache so the above changes can take effect.
-    - see image `sudo reload` below :point_down:![`sudo reload`](<Images/sudo reload.PNG>)
+- ***$ sudo systemctl reload apache2*** : This command was used reload Apache so the above changes can take effect. see image `sudo reload` below :point_down:![`sudo reload`](<Images/sudo reload.PNG>)
 
 
-- ***$ nano /var/www/projectlamp/index.php*** : This command was used to create a new file named index.php inside the customer web root folder as a PHP script will be used to test that Php is correctly installed and configured on the server, and also to confirm that Apache is able to handle and process requestd for PHP files. the PHP code is pasted in the nano text editor.
-    - see image `projectlamp` below :point_down:!['projectlamp'](Images/projectlamp.PNG)
-    - see image `PHPCodeUsedInNanoTextEditorForPHPLandingpage` below :point_down:![`PHPCodeUsedInNanoTextEditorForPHPLandingpage`](ImagesPHPCodeUsedInNanoTextEditorForPHPLandingpage.PNG)
+- ***$ nano /var/www/projectlamp/index.php*** : This command was used to create a new file named index.php inside the customer web root folder as a PHP script will be used to test that Php is correctly installed and configured on the server, and also to confirm that Apache is able to handle and process requestd for PHP files. the PHP code is pasted in the nano text editor. see image `projectlamp` below :point_down:!['projectlamp'](Images/projectlamp.PNG)
+    - see image `PHPCodeUsedInNanoTextEditorForPHPLandingpage` below :point_down:![`PHPCodeUsedInNanoTextEditorForPHPLandingpage`](Images/PHPCodeUsedInNanoTextEditorForPHPLandingpage.PNG)
 
 
 
@@ -130,8 +128,7 @@ With the default DirectoryIndex settings on Apache, a file named index.html will
 - ***$ sudo apache2ctl configtest*** : This command was used to make sure the configuration file doesnt contain syntax errors.
     - see image `PHPlampProjectConfig (1)` below :point_down:![`PHPlampProjectConfig (1)`](<Images/PHPlampProjectConfig (1).PNG>)
 
-- ***$ sudo systemctl reload apache2*** : This command was used to reload Apache so the changes take effect.
-    - see image `sudoreload` below :point_down:![`sudoreload`](Images/sudoreload.PNG)
+- ***$ sudo systemctl reload apache2*** : This command was used to reload Apache so the changes take effect. see image `sudoreload` below :point_down:![`sudoreload`](Images/sudoreload.PNG)
 
 
 - After the above has been done correctly, from the prior Ubuntu Apache2 Ubuntu default page refresh and you will see the PHP landing page.
