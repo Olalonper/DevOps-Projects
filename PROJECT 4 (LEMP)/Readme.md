@@ -27,14 +27,14 @@ In order to display web pages to our site visitors, we are going to employ Nginx
 - ***$ sudo apt update*** : This command was used to update a list of packages.
     - see image `sudo apt update` below :point_down:![`sudo apt update`](<Images/sudo apt update.PNG>)
 
-- ***$ sudo apt install nginx*** : This command was used to run apache2 package installation.
+- ***$ sudo apt install nginx*** : This command was used to install Nginx package installation.
     - see image `sudo apt install nginx1` below :point_down:![`sudo apt install nginx1`](<Images/sudo apt install nginx1.PNG>)
     - see image `sudo apt install nginx2` below :point_down:![`sudo apt install nginx2`](<Images/sudo apt install nginx2.PNG>)
     - see image `sudo apt install nginx3` below :point_down:![`sudo apt install nginx3`](<Images/sudo apt install nginx3.PNG>)
 
 
 
-- ***$ sudo systemctl status apache2*** : This command was used to verify that Apache is running using. If it is green and running that means that the apache was installed correctly.
+- ***$ sudo systemctl status nginx*** : This command was used to verify that Apache is running using. If it is green and running that means that the apache was installed correctly.
     - see image `sudo systemctl status nginx` below :point_down:![`sudo systemctl status nginx`](<Images/sudo systemctl status nginx.PNG>)
     
     
