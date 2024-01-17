@@ -67,3 +67,57 @@ MySQL is a popular database management system used within PHP environments. Now 
     - see image `sudo mysql -p` below :point_down:![`sudo mysql -p`](<Images/sudo mysql -p.PNG>)
 
 
+## Installing PHP
+### Step 3
+While Apache embeds the PHP interpreter in each request, Nginx requires an external program to handle PHP processing and act as a bridge between the PHP interpreter itself and the web server. This allows for a better overall performance in most PHP-based websites, but it requires additional configuration. one will need to install ***phfpm***, which stands for "PHP fastCGI process manager", and tell Nginx to pass PHP requests to this software for processing. Additionally, you'll need ***php-mysql***, a PHP module that allows PHP to communicate with MySQL-based databases. Core PHP packages will automatically be installed as dependencies.
+
+- `installing php1`***$ sudo apt install php-fpm php-mysql*** : This command was used to enable apache to handle PHP files. Core PHP packages will automatically be installed as dependencies.
+    - see image `InstallPHPandDependencies (1)` below :point_down:![`installing php1`](<Images/installing php1.PNG>)
+    - see image `InstallPHPandDependencies (2)` below :point_down:![`installing php2`](<Images/installing php2.PNG>)
+    - see image `InstallPHPandDependencies (3)` below :point_down:![`installing php3`](<Images/installing php3.PNG>)
+
+- ***php -v*** : This command was used to confirm the PHP version that was installed.
+    - ![`php-v`](Images/php-v.PNG)
+
+
+## Enabling PHP on the website
+With the default DirectoryIndex settings on Apache, a file named index.html will always take precedence over an index.php file. This is useful for setting up maintenance pages in PHP applications, by creating a temporary index.html file containing an informative message to visitors. Because this page will take precedence over the index.php page, it will then become the landing page for the application. once maintenance is over, the index.html is renamed or removed from the document root, bringing back the regular apllication page.
+
+- ***sudo vim /etc/apache2/mods-enabled/dir.conf*** : This command was used to edit the vim text editor and change the order in which the index.php file is listed within the DirectoryIndex directive, using the code in the nano text editior.
+    - see image `SudovimetcApache2modsenableddir.conf` below :point_down:![`SudovimetcApache2modsenableddir.conf`](Images/SudovimetcApache2modsenableddir.conf.PNG)
+    - see image `ChangePHPhomepage` below :point_down:![`ChangePHPhomepage`](Images/ChangePHPhomepage.PNG)
+
+
+- ***$ sudo systemctl reload apache2*** : This command was used reload Apache so the above changes can take effect.![`sudo reload`](<Images/sudo reload.PNG>)
+
+
+- ***$ nano /var/www/projectlamp/index.php*** : This command was used to create a new file named index.php inside the customer web root folder as a PHP script will be used to test that Php is correctly installed and configured on the server, and also to confirm that Apache is able to handle and process requestd for PHP files. the PHP code is pasted in the nano text editor.
+    - !['projectlamp'](Images/projectlamp.PNG)
+    - see image `PHPCodeUsedInNanoTextEditorForPHPLandingpage` below :point_down:![`PHPCodeUsedInNanoTextEditorForPHPLandingpage`](Images/PHPCodeUsedInNanoTextEditorForPHPLandingpage.PNG)
+
+
+
+## Creating a Virtual Host for your Website using Apache
+- ***$ sudo mkdir /var/www/projectlamp*** : This command was used to create the directory for ***projectlamp***.
+    - see image `CreatedDirectoryforProjectLAMP` below :point_down:![`CreatedDirectoryforProjectLAMP`](Images/CreatedDirectoryforProjectLAMP.PNG)
+
+
+- ***$ sudo chown -R $USER:$USER /var/www/projectlamp*** : This command was used to assign ownership of the directory with the ***$USER*** environment variab, which will reference the current system user.
+    - see image `AssignedOwnershipWithThe$USER` below :point_down:![`AssignedOwnershipWithThe$USER`](Images/AssignedOwnershipWithThe$USER.PNG)
+
+- ***$ sudo vi /etc/apache2/sites-available/projectlamp.conf*** `PHPlampProjectConfig (1)` `PHPlampProjectConfig (1)`: This command was used create and open a new configuration in Apache's ***sites-available*** directory using any preferred command-line editor in this case vi was used. The virtual host code was pasted in blank vi text editor.
+- ***$ sudo ls /etc/apache2/sites-available*** `PHPlampProjectConfig (1)` `PHPlampProjectConfig (1)`: This command was used to show the new file in the ***sites-available*** directory You will see something like this 000-default.conf  default-ssl.conf  projectlamp.conf
+- ***$ sudo a2ensite projectlamp*** `PHPlampProjectConfig (1)` `PHPlampProjectConfig (1)`: This command was used to enable the new virtual host.
+- ***$ sudo a2dissite 000-default*** `PHPlampProjectConfig (1)` `PHPlampProjectConfig (1)`: This command was used to disable the defaukt website that comes installed with Apache. This is required if you're not using a custom domain name, because in this case Apache's default configuration would overwrite the virtual host.
+- ***$ sudo apache2ctl configtest*** `PHPlampProjectConfig (1)` `PHPlampProjectConfig (1)`: This command was used to make sure the configuration file doesnt contain syntax errors.
+- ***$ sudo systemctl reload apache2*** `PHPlampProjectConfig (1)` `PHPlampProjectConfig (1)`: This command was used to reload Apache so the changes take effect.
+    - see image `PHPlampProjectConfig (1)` below :point_down:![`PHPlampProjectConfig (1)`](<Images/PHPlampProjectConfig (1).PNG>)
+    - see image `PHPlampProjectConfig (1)` below :point_down:![`PHPlampProjectConfig 2`](<Images/PHPlampProjectConfig 2.PNG>)
+
+
+
+- After the above has been done correctly, from the prior Ubuntu Apache2 Ubuntu default page refresh and you will see the PHP landing page.
+    - see image `phpLandingPage` below :point_down:![`phpLandingPage`](Images/phpLandingPage.PNG)
+
+
+
