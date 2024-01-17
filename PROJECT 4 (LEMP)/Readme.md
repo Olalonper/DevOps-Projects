@@ -39,10 +39,7 @@ In order to display web pages to our site visitors, we are going to employ Nginx
     
     
 - ***$ curl http://localhost:80*** : The ***curl*** command when run will return strangely formatted texts basically a bunch of html codes, but not cause for alarm its just to make sure that the Nginx web service responds to ***curl*** command with some payload.
-    - see image `CurlWebAccess (3)` below :point_down:![`CurlWebAccess (3)`](<Images/CurlWebAccess (3).PNG>)
+    - see image `curl web access nginx` below :point_down:![`curl web access nginx`](<Images/curl web access nginx.png>)
 
 - OR you can copy the IP address and paste it on your browser to confim that Nginx works correctly. either you do the above or below you should get the below in your web browser.
     - see image `testing nginx server from the web browser` below :point_down:![`testing nginx server from the web browser`](<Images/testing nginx server from the web browser.PNG>)
-
-
-
