@@ -118,4 +118,4 @@ In the bare-bone here's what each of these directives and location blocks do:
     - see image `sudo unlink` below :point_down:![`sudo unlink`](<Images/sudo unlink.PNG>)
 
 - ***$ sudo systemctl reload nginx*** This command was used to reload Nginx to apply the changes made.
-    - see image `sudo reload` below 👇:![`sudo reload`](<Images/sudo reload.PNG>)
+    - see image `sudo reload` below :point_down:![`sudo reload`](<Images/sudo reload.PNG>)
