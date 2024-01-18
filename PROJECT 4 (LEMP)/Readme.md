@@ -75,8 +75,6 @@ While Apache embeds the PHP interpreter in each request, Nginx requires an exter
     - see image `installing php1` below :point_down:![`installing php1`](<Images/installing php1.PNG>)
     - see image `installing php2` below :point_down:![`installing php2`](<Images/installing php2.PNG>)
     - see image `installing php3` below :point_down:![`installing php3`](<Images/installing php3.PNG>)
-    
-After installing the above, refresh your browser the same browser you used to confirm if Nginx was installed correctly and you should see the PHP home page.see image `installing php3` below :point_down:![`default page for PHP`](<Images/default page for PHP.PNG>)
 
 
 ## Configuring Nginx to use PHP Processor
