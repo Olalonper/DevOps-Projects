@@ -127,3 +127,7 @@ One can test it to validate that Nginx can correctly hand ***.php*** files off t
 - ***$ nano /var/www/projectLEMP/info.php*** :This command was used to open a new file called ***info.php*** within the document root in the nano text editor then past the below PHP code into the new file and this will return information about the server.
     - see image `creating test file for PHP` below :point_down:![`creating test file for PHP`](<Images/creating test file for PHP.PNG>)
     - see image `code for php` below :point_down:![`code for php`](<Images/code for php.PNG>)
+
+    
+After installing the above, refresh your browser the same browser you used to confirm if Nginx was installed correctly and you should see the PHP home page. see 
+    - below :point_down:![`default page for PHP`](<Images/default page for PHP.PNG>)
