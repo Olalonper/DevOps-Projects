@@ -129,5 +129,6 @@ One can test it to validate that Nginx can correctly hand ***.php*** files off t
     - see image `code for php` below :point_down:![`code for php`](<Images/code for php.PNG>)
 
     
-After installing the above, refresh your browser the same browser you used to confirm if Nginx was installed correctly and you should see the PHP home page. see 
-    - below :point_down:![`default page for PHP`](<Images/default page for PHP.PNG>)
+After installing the above, refresh your browser the same browser you used to confirm if Nginx was installed correctly and you should see the PHP home page. 
+- see below :point_down:![`default page for PHP`](<Images/default page for PHP.PNG>)
+
