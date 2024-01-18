@@ -119,3 +119,13 @@ In the bare-bone here's what each of these directives and location blocks do:
 
 - ***$ sudo systemctl reload nginx*** This command was used to reload Nginx to apply the changes made.
     - see image `sudo reload` below :point_down:![`sudo reload`](<Images/sudo reload.PNG>)
+
+
+
+## Testing PHP with Nginx
+### Step 5
+One can test it to validate that Nginx can correctly hand ***.php*** files off to your PHP processor. You can do this by creating a test PHP file in your document root. 
+
+- ***$ nano /var/www/projectLEMP/info.php*** :This command was used to open a new file called ***info.php*** within the document root in the nano text editor then past the below PHP code into the new file and this will return information about the server.
+    - see image `creating test file for PHP` below :point_down:![`creating test file for PHP`](<Images/creating test file for PHP.PNG>)
+    - see image `code for php` below :point_down:![`code for php`](<Images/code for php.PNG>)

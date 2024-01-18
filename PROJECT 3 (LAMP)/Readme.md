@@ -87,7 +87,9 @@ PHP is the component of our setup that will process code to display dynamic cont
     - ![`php-v`](Images/php-v.PNG)
 
 
-## Enabling PHP on the website
+## Testing PHP with Nginx
+### Step 5
+One can test it to validate that Nginx can correctly hand ***.php*** files off to your PHP operational. You can test it to validate that Nginx 
 With the default DirectoryIndex settings on Apache, a file named index.html will always take precedence over an index.php file. This is useful for setting up maintenance pages in PHP applications, by creating a temporary index.html file containing an informative message to visitors. Because this page will take precedence over the index.php page, it will then become the landing page for the application. once maintenance is over, the index.html is renamed or removed from the document root, bringing back the regular apllication page.
 
 - ***sudo vim /etc/apache2/mods-enabled/dir.conf*** : This command was used to edit the vim text editor and change the order in which the index.php file is listed within the DirectoryIndex directive, using the code in the nano text editior.
