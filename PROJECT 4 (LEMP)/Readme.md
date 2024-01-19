@@ -130,5 +130,57 @@ One can test it to validate that Nginx can correctly hand ***.php*** files off t
 
     
 After installing the above, refresh your browser the same browser you used to confirm if Nginx was installed correctly and you should see the PHP home page. 
-- see below :point_down:![`default page for PHP`](<Images/default page for PHP.PNG>)
+- see image `default page for PHP`below :point_down:![`default page for PHP`](<Images/default page for PHP.PNG>)
+
+
+# Retrieving data from MySQL database with PHP
+## Step 6
+Here one will create a test database(DB) with simple "To do list" and configure access to it, so the Nginx website would be able to query data from the DB and display it.
+- ***$ sudo mysql*** : This command was to connect to the MySQL console using the root account.
+    - see image `sudo mysql  to connect to the MySQL` below :point_down:![`sudo mysql  to connect to the MySQL`](<Images/sudo mysql  to connect to the MySQL.PNG>)
+
+    - ***mysql> CREATE DATABASE example_database;*** : This command was used to create new database, it is to be run on the MySQL console.
+        - see image `mysql creating database` below :point_down: ![`mysql creating database`](<Images/mysql creating database.PNG>)
+
+
+    - ***mysql>  CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'Circle8930@';*** : This command was used to create a new user and grant full priviledges on the database that has been created using my_sql_native_password as default authentication method. in this case the user's password was defines as Circle8930@ please note the multiple errors is as a result of incorrect password.
+        - see image `mysql creating database` below :point_down: ![`mysql creating database`](<Images/mysql creating database.PNG>)
+ 
+
+ - ***mysql> GRANT ALL ON example_database.* TO 'example_user'@'%';*** : This command was used to give the above user permission over the ***example_database*** database. This will give the ***example_user*** full priviledges over the ***example_database***, while preventing this user from creating or modifying other databases on your server. after this you run ***mysql> exit*** to exit.
+     - see image `mysql creating database` below :point_down: ![`mysql creating database`](<Images/mysql creating database.PNG>)
+     
+
+- ***$ mysql -u example_user -p*** : This command was used test if the new user has the proper permission by logging in to the MySQl console again, this time using the custom user credentials. the ***-p*** flag in this command, which will prompt you for the password used when creating the user (example_user). After logging in to the MySQL console, confirm that you have access to the ***example_database*** database and run ***mysql> exit*** to exit. 
+    - see image `Testing if new user has permissions MySQL` below :point_down: ![`Testing if new user has permissions MySQL`](<Images/Testing if new user has permissions MySQL.PNG>)
+
+
+- ***$ mysql> SHOW DATABASES;*** : This command was used to give/show the below output.
+    -  see image `confirming access to database` below :point_down: ![`confirming access to database`](<Images/confirming access to database.PNG>)
+
+- ***CREATE TABLE example_database.todo_list (item_id INT AUTO_INCREMENT,content VARCHAR(255),PRIMARY KEY(item_id));*** : This command was used to create a test table names ***todo_list**. From the MySQL console.
+    - see image `creating test table` below :point_down: ![`creating test table`](<Images/creating test table.PNG>)
+
+- ***mysql> INSERT INTO example_database.todo_list (content) VALUES ("My first important item");*** This command was used to input few rows of content in the test table and it was repeated few times, using different values such as ***Do my assignments, Read, watch video backlog, Tidy workstation*** 
+    - see image `creating test table` below :point_down: ![`creating test table`](<Images/creating test table.PNG>) 
+
+
+- ***mysql>  SELECT * FROM example_database.todo_list;*** : This command was used to confirm that the data was successfully save to the table and after confirming that you have valid data in your test table, you can run ***mysql> exit***
+    - see image `creating test table2` below :point_down:![`creating test table2`](<Images/creating test table2.PNG>)
+
+
+- ***$ nano /var/www/projectLEMP/todo_list.php*** : This command was used create a PHP script that will conenct to MySQL and query for the content. Create a new PHP file in your custom web root directory using the nano text editor.
+    -  see image `to do list nano for phps` below :point_down:![`to do list nano for php2`](<Images/to do list nano for php2.PNG>)
+
+    - see image `to do list PHP script` below :point_down:![`to do list PHP script`](<Images/to do list PHP script.PNG>)
+
+
+- ***http://1x.2xx.xx9.x2/todo_list.php*** : This command was use to access the MySQL table on the web browser by visiting the domain or public IP address configured for the website followed by ***/todo_list.php***
+    -  see image `to do list web page` below :point_down:![`to do list we page`](<Images/to do list web page.PNG>)
+
+
+
+
+
+
 
